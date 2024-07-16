@@ -10,6 +10,9 @@
                 <x-section-hero/>
                     <x-section-intro/>
                         <x-section-workmethod/>
+                            <x-section-project/>
+                                <x-section-about/>
+                                    <x-section-contact/>
+                                        <x-footer/>
         </x-body>
-
 </html>

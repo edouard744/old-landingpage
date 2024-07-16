@@ -1,4 +1,4 @@
-<section class="py-20 text-white bg-blue-800 px-2">
+<section class="py-20 text-white bg-cover bg-workmethod-mobile bg-right bg-blue-800 px-2">
     <h2 class="font-bold mb-10 text-4xl">Mon approche de travail</h2>
     <div class="mb-20">
         <span class="font-semibold mb-5 block text-3xl">1. On en discute</span>

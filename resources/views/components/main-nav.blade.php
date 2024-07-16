@@ -1,5 +1,4 @@
-<nav class="w-full z-50">
-    <div class="navbar">
+<nav class="w-full">
         <div class="nav-container mx-auto flex justify-between items-center h-16 relative">
             <input class="checkbox absolute h-8 w-8 top-5 right-5 opacity-0 cursor-pointer z-20" type="checkbox" />
             <div class="hamburger-lines flex flex-col justify-between h-6 w-8 absolute top-5 right-5 z-20">
@@ -18,5 +17,4 @@
                 <li class="mb-6 text-xl font-medium list-none"><a href="#" class="text-gray-900 no-underline hover:font-bold">Contact</a></li>
             </ul>
         </div>
-    </div>
 </nav>

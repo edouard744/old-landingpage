@@ -112,12 +112,12 @@ h1 {
     background-image: url('http://localhost:8080/storage/background-mobile.png');
 }
 
-.bg-2 {
-    background-image: url('http://localhost:8080/storage/BG-2.png');
+.bg-workmethod-mobile {
+    background-image: url('http://localhost:8080/storage/workmethod_mobile.png');
 }
 
 .menu-items {
-    transform: translateX(150%);
+    transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
 }
 .nav-container .hamburger-lines .line {

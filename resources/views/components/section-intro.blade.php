@@ -1,4 +1,4 @@
-<section class="bg-white relative bottom-7 px-2 rounded-3xl pt-16 border-transparent border-2 ">
+<section class="bg-white shadow-xl relative -my-5 px-2 rounded-3xl pt-16 border-transparent border-2 ">
     <div>
         <h2 class="text-blue-900 mb-7 text-4xl font-bold text-center">Comment puis-je vous <span class="text-blue-600">aider</span> ?</h2>
         <p class="font-semibold text-center">Texte remplissage... Être présent sur internet est plus important que jamais.Adipisicing enim eiusmod esse. </p>

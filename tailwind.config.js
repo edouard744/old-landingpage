@@ -6,6 +6,9 @@ export default {
             transparent: 'transparent',
             current: 'currentColor',
             white: '#FDFEFE',
+            grey: {
+                800: '#222934',
+            },
             blue: {
                 100: '#FDFEFE',
                 200: '#AEC8F4',
