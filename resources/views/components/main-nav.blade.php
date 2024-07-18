@@ -11,7 +11,7 @@
                 <a href="#">logo</h1>
             </div>
         </div>
-        <ul class="menu-items justify-center gap-4  flex bg-blue-800  text-white z-10 flex-col items-center pt-28 h-screen w-full  absolute top-0 left-0 shadow-inner text-center underline text-2xl">
+        <ul class="menu-items flex flex-col sm:flex-row gap-4 justify-center bg-blue-800 sm:bg-transparent  text-white sm:text-blue-600 z-10  items-center pt-28 sm:pt-6 h-screen sm:h-max w-full  absolute top-0 left-0 shadow-inner text-center underline sm:no-underline text-2xl sm:text-lg">
             <li class="mb-6 font-medium list-none"><a href="#" class="text-gray-900 hover:font-bold">Home</a></li>
             <li class="mb-6 font-medium list-none"><a href="#" class="text-gray-900 no-underline hover:font-bold">Projets</a></li>
             <li class="mb-6 font-medium list-none"><a href="#" class="text-gray-900 no-underline hover:font-bold">Contact</a></li>
