@@ -9,26 +9,36 @@
     }
 }
 
-.radius {
-    border-radius: 10px;
-    overflow: hidden;
+.hide {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    filter: blur(5px);
 }
-.box {
-    position: relative;
+.slide {
+    transform: translateX(-20%);
+    transition: transform 0.5s ease-in-out;
 }
-.box::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 50px;
-    padding: 1px;
-    background: linear-gradient(45deg, #942aff, #d0a1ff);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
 }
+/*sibling transition deley */
+.service:nth-child(2) {
+    transition-delay: 100ms;
+}
+.service:nth-child(3) {
+    transition-delay: 150ms;
+}
+.service:nth-child(4) {
+    transition-delay: 200ms;
+}
+.service:nth-child(5) {
+    transition-delay: 250ms;
+}
+
 h1 {
     font-size: clamp(2rem, 5vw, 3.75rem); /* 60px */
     line-height: 1.2;
@@ -60,8 +70,13 @@ h1 {
     border-radius: 0.25em;
 }
 
-.bg-hero-mobile {
+.bg-hero {
     background-image: url('http://localhost:8080/storage/background-mobile.png');
+}
+@media (min-width: 768px) {
+    .bg-hero {
+        background-image: url('http://localhost:8080/storage/background-desktop.png');
+    }
 }
 
 .bg-workmethod-mobile {
