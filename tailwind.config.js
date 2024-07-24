@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} **/
+const colors = require('tailwindcss/colors');
 export default {
     content: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
     theme: {
         colors: {
+            ...colors,
             transparent: 'transparent',
             current: 'currentColor',
             white: '#FDFEFE',
             grey: {
                 800: '#222934',
+                500: '#AEBFCC',
             },
             blue: {
                 100: '#FDFEFE',

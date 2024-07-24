@@ -1,4 +1,4 @@
-<section class="bg-cover  flex justify-center flex-col h-screen bg-bottom md:bg-center pt-24 pb-40 bg-hero">
+<section class=" bg-cover bg-fixed flex justify-center flex-col h-screen bg-bottom md:bg-center pt-24 pb-40 bg-hero">
     <div class=' py-16 relative lg:w-full max-w-max lg:max-w-5xl mx-auto  text-center'>
         <h1 class="mb-5 md:px-6 lg:px-0 text-blue-900 text-4xl md:text-5xl lg:text-6xl max-w-sm sm:max-w-[510px] md:max-w-2xl lg:max-w-3xl font-bold mx-auto">Transformer votre vision en réalité <span class="block sm:inline"> digitale</span></h1>
         <p class='text-lg md:text-2xl lg:text-3xl  text-blue-600 font-medium max-w-4xl md:max-w-full mb-7'>La conception de votre site <span class="block sm:inline"> web sur mesure</span></p>

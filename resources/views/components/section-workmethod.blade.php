@@ -1,4 +1,4 @@
-<section class="py-20 text-white bg-cover bg-workmethod-mobile bg-right bg-blue-800 ">
+<section id="target" class="py-20 text-white bg-cover bg-workmethod-mobile bg-right bg-blue-800 ">
     <div class="px-4 md:grid md:grid-cols-2 md:gap-8 flex flex-col items-center md:items-start md:max-w-5xl md:mx-auto">
         <h2 class="font-bold mb-10 text-scale-sm ">Mon approche de travail</h2>
         <div class=" js mb-20 md:mb-0">

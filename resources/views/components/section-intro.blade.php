@@ -1,7 +1,7 @@
-<section class="bg-white  shadow-xl relative -mt-14 -mb-5 px-2 rounded-3xl pt-16 border-transparent border-2 ">
+<section id="scrollable" class="bg-[#FEFEFE]  shadow-xl relative -mt-14 -mb-5 px-2 rounded-3xl pt-32 border-[#E1E7EE] border-2 ">
     <div class="md:max-w-5xl md:mx-auto">
         <div class="mb-9 ">
-            <h2 class="text-blue-900 mb-7 text-scale-sm font-bold max-w-sm sm:max-w-xl mx-auto text-center">Comment puis-je vous <span class="text-blue-600">aider ?</span> </h2>
+            <h2  class="text-blue-900 mb-7 text-scale-sm font-bold max-w-sm sm:max-w-xl mx-auto text-center">Comment puis-je vous <span class="text-blue-600">aider ?</span> </h2>
             <p class="font-semibold text-center max-w-md mx-auto">Texte remplissage... Être présent sur internet est plus important que jamais.Adipisicing enim eiusmod esse. </p>
         </div>
         <div class="lg:grid gap-20 lg:mb-20 grid-cols-2 relative">
@@ -26,7 +26,6 @@
                         <span class="text-blue-900 font-semibold text-3xl">Communication</span>
                         <p class="text-xl font-medium max-w-md">Je vous accompagne pour créer et optimiser vos réseaux sociaux et autre outils de communication, afin d’améliorer votre visibilité en ligne.</p>
                 </div>
-
-        </div>
+</div>
     </div>
 </section>

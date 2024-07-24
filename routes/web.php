@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Mailcontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,12 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/projects', function () {
     return view('projects');
 });
+//Route home
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/projects/easyink',function (){
+// Route contact
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::post('contact', [Mailcontroller::class, 'store']);
+
+Route::get('/projects/easyink', function () {
     return view('easyink');
 });
-Route::get('/projects/dreamreal',function (){
+Route::get('/projects/dreamreal', function () {
     return view('dreamreal');
 });
