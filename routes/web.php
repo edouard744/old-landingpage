@@ -18,7 +18,11 @@ Route::get('/projects', function () {
     return view('projects');
 });
 //Route home
+// redirect / to /home
 Route::get('/', function () {
+    return redirect('/home');
+});
+Route::get('/home', function () {
     return view('home');
 });
 // Route contact

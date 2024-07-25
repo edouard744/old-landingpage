@@ -84,7 +84,7 @@ h1 {
 .top-burger-menu {
     bacground: transparent;
 }
-@media (min-width: 640px) {
+@media screen and (min-height: 500px) and (min-width: 640px) {
     .fixed-section {
         position: fixed;
         top: 0;
@@ -157,5 +157,69 @@ h1 {
 
     .nav-container input[type='checkbox']:checked ~ .top-burger-menu .hamburger-lines .line3 {
         transform: rotate(-45deg);
+    }
+}
+.first-bounce {
+    animation: bounce 5s infinite linear;
+}
+.second-bounce {
+    animation: second-bounce 5s infinite linear;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    12.5% {
+        transform: translateY(5%);
+    }
+    25% {
+        transform: translateY(10%);
+    }
+    37.5% {
+        transform: translateY(5%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    62.5% {
+        transform: translateY(-5%);
+    }
+    75% {
+        transform: translateY(-10%);
+    }
+    87.5% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes second-bounce {
+    100% {
+        transform: translateY(0);
+    }
+    87.5% {
+        transform: translateY(5%);
+    }
+    75% {
+        transform: translateY(10%);
+    }
+    62.5% {
+        transform: translateY(5%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    37.5% {
+        transform: translateY(-5%);
+    }
+    25% {
+        transform: translateY(-10%);
+    }
+    12.5% {
+        transform: translateY(-5%);
+    }
+    0% {
+        transform: translateY(0);
     }
 }

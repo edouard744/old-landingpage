@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <x-head description="Willems Edouard, jeune développeur web belge fraîchement diplômé." title="Willems Edouard Portfolio"/>
         <x-body>
             <x-main-nav/>
-                <Section class=" bg-hero relative gap-8  items-center xl:justify-center bg-cover flex flex-col xl:flex-row py-32">
+                <Section class=" bg-hero relative gap-8 h-screen  items-center xl:justify-center bg-cover flex flex-col xl:flex-row py-32">
 
                     <div class="flex flex-col gap-4">
                         <h1 class="font-bold text-5xl text-blue-900 max-w-sm"><span class="text-sm mb-2 block text-blue-500">Contact</span>Parlez moi de <span class="text-blue-500">votre projet !</span></h1>

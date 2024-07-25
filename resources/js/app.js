@@ -20,10 +20,3 @@ const hiddenElements = document.querySelectorAll('.hide');
 hiddenElements.forEach(element => {
     observer.observe(element);
 });
-document.getElementById('scrollable').addEventListener('scroll', function () {
-    // Get the target element
-    var target = document.getElementById('target');
-
-    // Scroll to the target element
-    target.scrollIntoView({ behavior: 'smooth' });
-});
