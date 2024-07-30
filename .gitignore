@@ -17,3 +17,13 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+.DS_Store
+.editorconfig
+.env.example
+composer.lock
+storage/debugbar
+yarn.lock
+.supermaven/
+package-lock.json
+storage/svg
+
