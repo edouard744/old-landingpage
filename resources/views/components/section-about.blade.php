@@ -1,4 +1,4 @@
-<section class="bg-grey-800 py-20 px-9 text-white lg:grid lg:grid-cols-2 xl:gap-x-10">
+<section class="bg-grey-800 py-32 px-9 text-white lg:grid lg:grid-cols-2 xl:gap-x-10">
 <div class="mb-10 md:mb-0 w-max mx-auto lg:mx-0 lg:flex lg:flex-col lg:justify-end">
 <h2 class="font-bold mb-4">À propos de moi</h2>
 <span class="text-scale font-bold">Salut !</span>

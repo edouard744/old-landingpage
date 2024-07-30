@@ -4,8 +4,6 @@
     <x-head description="Mes projets" title="Willems Edouard : Projets" />
 
         <x-body>
-
-
             <x-main-nav />
                 <section class='bg-hero h-screen  xl:bg-indigo-800 bg-top bg-cover'>
                     <div class="max-w-7xl py-20 w-full relative mx-auto">
@@ -13,27 +11,7 @@
                         <div class='flex flex-col items-center mb-20 gap-6'>
                             <article class='p-2 bg-white shadow-lg py-8 md:p-8 duration-150 has-[:hover]:scale-[101%] scale-100 relative flex flex-col items-center justify-between md:flex-row border-grey-100 w-max max-w-full lg:max-w-7xl border-2 rounded-xl'>
                                 <div class='flex mb-6 md:mb-0 flex-col'>
-                                    <h2 class='text-2xl mb-6'>EasyInk</h2>
-                                    <ul class='flex mb-6 gap-2'>
-                                        <li>
-
-                                            <div class="py-1 px-3 box">
-                                                <span class='text-gradient'>ReactJS</span>
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div class="py-1 px-3 box">
-                                                <span class='text-gradient'>Node.JS</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="py-1 px-3 box">
-                                                <span class='text-gradient'>CRM</span>
-                                            </div>
-                                        </li>
-
-                                    </ul>
+                                    <h2 class='text-2xl mb-6'>Pression Pro</h2>
                                     <p class='max-w-xs'>EasyInk : un CRM pour tatoueur, un projet réalisé lors de mon travail de fin d'étude</p>
                                     <a class=' z-20 w-full absolute h-full top-0 left-0' href='/projects/easyink'>
                                         <span class='sr-only'>Liens vers le projets EasyInk</span>
@@ -47,18 +25,9 @@
                                     </div>
                                 </div>
                                 <div class='mb-6 md:mb-0 max-w-md w-10/12 md:w-1/2'>
-
-
                                     <img class='rounded-lg w-full ' src="{{asset('storage/EasyInk.jpg')}}" alt='projet1'>
                                 </div>
-
-
-
                             </article>
-                        
-
-
-
                         </div>
                     </div>
                 </section>

@@ -7,7 +7,7 @@ export default {
             ...colors,
             transparent: 'transparent',
             current: 'currentColor',
-            white: '#FDFEFE',
+            white: '#FEFEFE',
             grey: {
                 800: '#222934',
                 500: '#AEBFCC',

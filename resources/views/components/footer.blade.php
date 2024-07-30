@@ -1,4 +1,4 @@
-<footer class=' pt-10 bg-blue-900 text-white' {{ $attributes }}>
+<footer  class=' pt-10 bg-blue-900 text-white' {{ $attributes }}>
     <div class="flex px-10 mx-auto flex-col md:flex-row md: justify-around max-w-7xl">
 
 

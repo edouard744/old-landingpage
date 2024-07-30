@@ -1,3 +1,3 @@
-<body class=' antialiased scroll-smooth  '>
+<body class=' antialiased'>
 {{ $slot }}
 </body>

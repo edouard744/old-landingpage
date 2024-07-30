@@ -24,20 +24,6 @@
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
 }
-/*sibling transition deley */
-.service:nth-child(2) {
-    transition-delay: 100ms;
-}
-.service:nth-child(3) {
-    transition-delay: 150ms;
-}
-.service:nth-child(4) {
-    transition-delay: 200ms;
-}
-.service:nth-child(5) {
-    transition-delay: 250ms;
-}
-
 h1 {
     font-size: clamp(2rem, 5vw, 3.75rem); /* 60px */
     line-height: 1.2;
@@ -82,7 +68,7 @@ h1 {
     background-image: url('http://localhost:8080/storage/workmethod_mobile.png');
 }
 .top-burger-menu {
-    bacground: transparent;
+    background: transparent;
 }
 @media screen and (min-height: 500px) and (min-width: 640px) {
     .fixed-section {
@@ -159,67 +145,93 @@ h1 {
         transform: rotate(-45deg);
     }
 }
-.first-bounce {
-    animation: bounce 5s infinite linear;
+/*.first-bounce {*/
+/*    animation: bounce 5s infinite linear;*/
+/*}*/
+/*.second-bounce {*/
+/*    animation: second-bounce 5s infinite linear;*/
+/*}*/
+/*@keyframes bounce {*/
+/*    0% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    12.5% {*/
+/*        transform: translateY(5%);*/
+/*    }*/
+/*    25% {*/
+/*        transform: translateY(10%);*/
+/*    }*/
+/*    37.5% {*/
+/*        transform: translateY(5%);*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    62.5% {*/
+/*        transform: translateY(-5%);*/
+/*    }*/
+/*    75% {*/
+/*        transform: translateY(-10%);*/
+/*    }*/
+/*    87.5% {*/
+/*        transform: translateY(-5%);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*}*/
+/*@keyframes second-bounce {*/
+/*    100% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    87.5% {*/
+/*        transform: translateY(5%);*/
+/*    }*/
+/*    75% {*/
+/*        transform: translateY(10%);*/
+/*    }*/
+/*    62.5% {*/
+/*        transform: translateY(5%);*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    37.5% {*/
+/*        transform: translateY(-5%);*/
+/*    }*/
+/*    25% {*/
+/*        transform: translateY(-10%);*/
+/*    }*/
+/*    12.5% {*/
+/*        transform: translateY(-5%);*/
+/*    }*/
+/*    0% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*}*/
+
+/*HOVER EFFECT*/
+.up {
+    transition: all 0.2s ease-in-out;
 }
-.second-bounce {
-    animation: second-bounce 5s infinite linear;
+.close {
+    transition: all 0.2s ease-in-out;
 }
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    12.5% {
-        transform: translateY(5%);
-    }
-    25% {
-        transform: translateY(10%);
-    }
-    37.5% {
-        transform: translateY(5%);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    62.5% {
-        transform: translateY(-5%);
-    }
-    75% {
-        transform: translateY(-10%);
-    }
-    87.5% {
-        transform: translateY(-5%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+.slide-animation {
+    transition: all 0.5s ease-in-out;
 }
-@keyframes second-bounce {
-    100% {
-        transform: translateY(0);
-    }
-    87.5% {
-        transform: translateY(5%);
-    }
-    75% {
-        transform: translateY(10%);
-    }
-    62.5% {
-        transform: translateY(5%);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    37.5% {
-        transform: translateY(-5%);
-    }
-    25% {
-        transform: translateY(-10%);
-    }
-    12.5% {
-        transform: translateY(-5%);
-    }
-    0% {
-        transform: translateY(0);
-    }
+.up:hover,
+.up:focus {
+    box-shadow: inset 0 -3.5em 0 0 white;
+}
+.close:hover,
+.close:focus {
+    box-shadow:
+        inset 10em 0 0 0 white,
+        inset -10em 0 0 0 white;
+}
+
+.slide-animation:hover,
+.slide-animation:focus {
+    box-shadow: inset 20em 0 0 0 white;
 }
