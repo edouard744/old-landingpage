@@ -14,6 +14,7 @@ class Mailcontroller extends Controller
     {
         $name = $request->name;
         $email = $request->email;
+
         $tel = $request->tel;
         $message = $request->message;
         if ($tel == '') {

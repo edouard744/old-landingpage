@@ -9,9 +9,14 @@ export default {
             current: 'currentColor',
             white: '#FEFEFE',
             grey: {
+                50: '#f9fafb',
+                100: '#f3f4f6',
+                200: '#e5e7eb',
+                300: '#E5E5E5',
                 800: '#222934',
                 500: '#AEBFCC',
             },
+
             blue: {
                 100: '#FDFEFE',
                 200: '#AEC8F4',

@@ -1,14 +1,96 @@
-<section class="bg-grey-800 py-32 px-9 text-white lg:grid lg:grid-cols-2 xl:gap-x-10">
-<div class="mb-10 md:mb-0 w-max mx-auto lg:mx-0 lg:flex lg:flex-col lg:justify-end">
-<h2 class="font-bold mb-4">À propos de moi</h2>
-<span class="text-scale font-bold">Salut !</span>
-<span class="text-scale block font-bold">Je suis <em class="background-name relative inline-block z-10 not-italic">Edouard</em></span>
-</div>
+<section class="bg-grey-800 px-9 py-32 text-white lg:grid lg:grid-cols-2 xl:gap-x-10">
+    <div class="mx-auto mb-10 w-max md:mb-0 lg:mx-0 lg:flex lg:flex-col lg:justify-end">
+        <h2 class="js-about-left js-about-box mb-4 font-bold">À propos de moi</h2>
+        <span class="text-scale block js-about-up font-bold">Salut !</span>
+        <span class="text-scale js-about-up block font-bold">
+            Je suis
+            <em class="background-name relative z-10 inline-block not-italic">Edouard</em>
+        </span>
+    </div>
 
-<x-image image="storage/about.png" hdimage='storage/about.png' alt="Une image de moi" containerClass="block w-full mb-10 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:place-self-center mx-auto lg:mx-0 max-w-lg lg:mb-0 xl:place-self-end xl:my-auto" imageClass="w-full "/>
-<div class="md:mt-10 sm:mx-auto lg:mx-0 max-w-xl block sm:text-lg">
-<p class="mb-6 hyphens-auto">J’ai 22 ans et je suis un passionné de développement web dans la région de Liège qui viens tout juste de terminer son bachelier.</p>
-<p class="mb-6 hyphens-auto">Je me lance dans l’aventure du développement web en solo avec l’envie d’apprendre de nouvelles choses, de démontrer mes compétences, et surtout, de contribuer à la réussite de projets inspirants.</p>
-<p class="hyphens-auto">Mon objectif est d’apporter une valeur ajoutée concrète tout en grandissant professionnellement à chaque nouvelle expérie nce. </p>
-</div>
+    <x-image
+        image="storage/about.png"
+        hdimage="storage/about.png"
+        alt="Une image de moi"
+        containerClass="block js-about-image w-full mb-10 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:place-self-center mx-auto lg:mx-0 max-w-lg lg:mb-0 xl:place-self-end xl:my-auto"
+        imageClass="w-full "
+    />
+    <div class="block max-w-xl sm:mx-auto md:mt-10 lg:mx-0">
+        <p class="js-about-down mb-6 hyphens-auto text-lg">
+            J’ai 22 ans et je suis un passionné de développement web dans la région de Liège qui viens tout juste de
+            terminer son bachelier.
+        </p>
+        <div>
+            <div class="flex w-full gap-4">
+                <div class="js-about-left relative flex h-16 w-16 min-w-16 items-center justify-center">
+                    <svg
+                        class="h-10 w-10"
+                        width="23"
+                        height="31"
+                        viewBox="0 0 23 31"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M12.8412 0.727051C11.0432 0.727051 9.5791 2.1897 9.5791 3.98913C9.5791 5.78712 11.0418 7.25122 12.8412 7.25122C14.6392 7.25122 16.1033 5.78856 16.1033 3.98913C16.1033 2.1897 14.6406 0.727051 12.8412 0.727051ZM12.8412 6.62118C11.3901 6.62118 10.2093 5.44036 10.2093 3.98925C10.2093 2.53814 11.3901 1.35731 12.8412 1.35731C14.2923 1.35731 15.4731 2.53814 15.4731 3.98925C15.4746 5.44036 14.2937 6.62118 12.8412 6.62118Z"
+                            fill="#F7F9FB"
+                        />
+                        <path
+                            d="M11.6353 23.439L12.9563 28.7201C13.1731 29.5887 13.7772 30.2694 14.5736 30.5441C14.8164 30.6279 15.0607 30.6698 15.3049 30.6698C15.4856 30.6698 15.6663 30.6467 15.844 30.6004C16.5132 30.4255 16.9555 29.8749 17.1246 29.0077C17.2286 28.47 17.2055 27.8991 17.0523 27.3109L15.3613 20.7822C15.3425 20.7071 15.2962 20.6435 15.2327 20.6001L12.0255 18.4364L13.5185 13.5543C14.5302 15.3436 15.2674 15.4563 15.5333 15.4245H18.9283L20.6627 29.7476C20.6931 30.0006 20.8289 30.2304 21.0342 30.3807C21.1932 30.4963 21.3839 30.557 21.5791 30.557C21.6369 30.557 21.6947 30.5512 21.7511 30.5411C22.228 30.4501 22.5532 30.0006 22.4925 29.5207L20.7032 15.4259H20.7292C21.2871 15.4143 22.3408 15.0602 22.3408 13.8071C22.3408 13.5643 22.3104 13.3388 22.2497 13.1336C22.0517 12.4601 21.4071 11.9904 20.683 11.9904H20.2682L19.8852 8.97834L18.1739 9.20091L18.5121 11.9904H16.5248L14.6314 9.2125C14.1515 8.50864 13.4347 8.00422 12.6109 7.79028L10.8851 7.34225C9.72022 7.04162 8.51483 7.68912 8.14046 8.82226L8.12457 8.87284C8.12457 8.87284 6.17051 15.3608 5.66028 17.0606C5.4695 17.6966 5.48973 18.24 5.59813 18.6866C5.56778 18.7213 5.54177 18.7603 5.52876 18.8065L2.9662 27.6881C2.75229 28.4281 2.87948 29.2288 3.30585 29.8271C3.5819 30.2145 3.93023 30.492 4.33926 30.6495C4.55317 30.7319 4.77431 30.7724 5.00123 30.7724C5.17756 30.7724 5.35823 30.7478 5.54033 30.6987C6.34105 30.4833 6.99288 29.8242 7.24148 28.9802L9.30972 21.9487L11.6353 23.439ZM21.868 29.6003C21.8868 29.7535 21.7842 29.8951 21.6324 29.924C21.5515 29.9399 21.472 29.9212 21.4055 29.8735C21.339 29.8243 21.2971 29.7535 21.287 29.6726L19.5613 15.426H20.0672L21.868 29.6003ZM18.8733 9.74452L19.3401 9.68382L19.6335 11.9906H19.1465L18.8733 9.74452ZM6.26291 17.2415C6.7731 15.5418 8.72719 9.05521 8.72719 9.05373L8.73876 9.01904C9.00903 8.201 9.88347 7.73269 10.7275 7.9524L12.4532 8.40043C13.1296 8.57676 13.7193 8.99014 14.1125 9.56823L16.0984 12.4849C16.1576 12.5716 16.2544 12.6222 16.3585 12.6222H20.6816C21.1296 12.6222 21.5257 12.9055 21.6457 13.3131C21.689 13.4605 21.7107 13.6267 21.7107 13.8088C21.7107 14.7396 20.816 14.7945 20.7221 14.7974L15.4755 14.8003C15.4682 14.8003 14.7889 14.7728 13.7237 12.5947C13.6674 12.4791 13.5445 12.4097 13.4159 12.4184C13.2872 12.4285 13.1774 12.5167 13.1398 12.6395L11.3548 18.4756C11.3144 18.6086 11.365 18.7516 11.4791 18.8282L14.7803 21.0555L16.4424 27.4683C16.571 27.9655 16.5927 28.4425 16.506 28.8876C16.3846 29.5091 16.1085 29.8806 15.685 29.9919C15.3887 30.0685 15.0838 30.054 14.7788 29.9499C14.1949 29.7476 13.7295 29.2186 13.5677 28.5682L12.2177 23.1654C12.199 23.0874 12.1498 23.0209 12.0819 22.9776L6.80084 19.5926C6.67365 19.4741 5.8455 18.6329 6.26319 17.2411L6.26291 17.2415ZM6.63724 28.8026C6.45079 29.4385 5.96661 29.9328 5.37694 30.0918C5.08932 30.1699 4.81616 30.1597 4.56467 30.0629C4.27127 29.9502 4.02122 29.7478 3.81746 29.4631C3.50093 29.0194 3.40986 28.4225 3.5703 27.8646L5.9681 19.5569C6.17623 19.8821 6.38147 20.0657 6.40171 20.083C6.41327 20.0917 6.42483 20.1004 6.43639 20.109L8.75612 21.5948L6.63724 28.8026Z"
+                            fill="#F7F9FB"
+                        />
+                        <path
+                            d="M7.70063 7.40613L7.45348 7.2905C5.55001 6.40165 4.34606 6.64733 3.66947 7.00867C3.11447 7.3064 2.69389 7.83828 2.48721 8.50603C2.12009 9.68685 0.901673 13.6139 0.615514 14.5678C0.486879 14.9941 0.534576 15.4393 0.754264 15.8902C1.07079 16.5377 1.67927 17.0262 2.4236 17.2315L4.55688 17.8197L7.70063 7.40613ZM3.09004 8.69392C3.24758 8.18517 3.55975 7.78338 3.96879 7.56368C4.28676 7.39313 4.65677 7.3093 5.07303 7.3093C5.62226 7.3093 6.25096 7.45672 6.93894 7.75156L5.14673 13.6919L1.85575 12.673C2.31248 11.1959 2.86315 9.42238 3.09004 8.69392ZM2.59283 16.6245C2.02192 16.467 1.55941 16.0984 1.32095 15.6128C1.17208 15.3093 1.13884 15.0188 1.21978 14.7485C1.3036 14.4681 1.47126 13.9247 1.67218 13.2714L4.96604 14.2918L4.13354 17.048L2.59283 16.6245Z"
+                            fill="#F7F9FB"
+                        />
+                    </svg>
+                    <div
+                        class="js-dotted-spin absolute h-16 w-16 min-w-16 rounded-full border-2 border-dashed border-white"
+                    ></div>
+                </div>
+
+                <p class="js-about-right mb-6 hyphens-auto">
+                    Je me lance dans l’aventure du développement web en solo avec l’envie d’apprendre de nouvelles
+                    choses, de démontrer mes compétences, et surtout, de contribuer à la réussite de projets inspirants.
+                </p>
+            </div>
+            <div class="flex w-full gap-4">
+                <div class="js-about-left relative flex h-16 w-16 min-w-16 items-center justify-center">
+                    <svg
+                        class="h-10 w-10"
+                        width="31"
+                        height="26"
+                        viewBox="0 0 31 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g clip-path="url(#clip0_750_163)">
+                            <path
+                                d="M15.7833 0.727051C15.4941 0.727051 15.2821 0.961738 15.2821 1.2551V11.7182L11.0796 19.2087L10.8675 19.5998L7.72532 14.0064C7.62893 13.8304 7.45543 13.7326 7.26266 13.7522C7.08916 13.7522 6.93494 13.85 6.83855 14.0064L0.78543 24.7629C0.650488 25.0172 0.727598 25.3301 0.978205 25.467C1.05531 25.5061 1.13242 25.5257 1.22881 25.5257H29.798C30.0872 25.5257 30.2992 25.291 30.2992 25.0172C30.2992 24.9194 30.28 24.8412 30.2414 24.7629L24.1883 13.9869C24.0919 13.8109 23.9184 13.7131 23.7256 13.7326C23.5521 13.7326 23.3979 13.8304 23.3015 13.9869L20.4484 19.0913L16.3038 11.7182V7.78723H19.1376V8.27616C19.1376 8.56952 19.3689 8.78465 19.6581 8.78465H24.0341C24.3232 8.78465 24.5353 8.54996 24.5353 8.27616C24.5353 8.21749 24.5353 8.13926 24.4967 8.08059L23.6871 5.9684L24.4967 3.85621C24.5931 3.58241 24.4774 3.28905 24.2075 3.19127C24.1497 3.17171 24.0919 3.15215 24.0148 3.15215H20.14V2.66322C20.14 2.36986 19.9087 2.15473 19.6388 2.15473H16.2845V1.2551C16.2845 0.961738 16.0725 0.727051 15.7833 0.727051ZM16.3038 3.19127H19.1376V6.75069H16.3038V3.19127ZM20.1593 4.20825H23.2822L22.6654 5.79238C22.6268 5.90973 22.6268 6.04663 22.6654 6.18353L23.2822 7.76767H20.1593V4.20825ZM15.8026 12.9112L18.8291 18.309L17.5954 19.6194L16.2267 18.1526C16.1303 18.0548 15.9953 17.9961 15.8604 17.9961C15.7255 17.9961 15.5905 18.0548 15.4941 18.1526L14.1254 19.6194L12.8146 18.2308L15.8026 12.9112ZM7.28194 15.2972L10.2892 20.6364L8.11087 24.5087H2.11558L7.28194 15.2972ZM23.7449 15.2972L28.9112 24.5087H23.475L21.0268 20.1474L23.7449 15.2972ZM12.2748 19.1696L13.7399 20.7146C13.9327 20.9297 14.2604 20.9297 14.4532 20.7146L15.8219 19.2478L17.1906 20.7146C17.3833 20.9297 17.711 20.9297 17.9038 20.7146L19.2918 19.2282L22.2412 24.4891H9.22896L12.217 19.15L12.2748 19.1696Z"
+                                fill="#F7F9FB"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_750_163">
+                                <rect
+                                    width="29.5909"
+                                    height="24.8182"
+                                    fill="white"
+                                    transform="translate(0.727539 0.727051)"
+                                />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div
+                        class="js-dotted-spin absolute h-16 w-16 min-w-16 rounded-full border-2 border-dashed border-white"
+                    ></div>
+                </div>
+
+                <p class="js-about-right hyphens-auto">
+                    Mon objectif est d’apporter une valeur ajoutée concrète tout en grandissant professionnellement à
+                    chaque nouvelle expérie nce.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>

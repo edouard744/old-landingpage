@@ -15,9 +15,12 @@ class Contact extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(protected string $name, protected string $email, protected string $tel, protected string $message)
-    {
-
+    public function __construct(
+        protected string $name,
+        protected string $email,
+        protected string $tel,
+        protected string $message
+    ) {
         //
     }
 
@@ -26,9 +29,7 @@ class Contact extends Mailable
      */
     public function envelope(): Envelope
     {
-        return new Envelope(
-            subject: 'Nouveau message formulaire de contact',
-        );
+        return new Envelope(subject: 'Nouveau message formulaire de contact');
     }
 
     /**
@@ -43,7 +44,7 @@ class Contact extends Mailable
                 'email' => $this->email,
                 'tel' => $this->tel,
                 'messages' => $this->message,
-            ],
+            ]
         );
     }
 

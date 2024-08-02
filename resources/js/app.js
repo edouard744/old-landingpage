@@ -23,6 +23,16 @@ gsap.to('.js-hero-up', {
     duration: 0.75,
     stagger: 0.2,
     ease: 'power1.inOut',
+    onComplete: () => {
+        const floatingobjs = document.querySelectorAll('.js-floating');
+        for (let i = 0; i < floatingobjs.length; i++) {
+            if (i % 2 === 0) {
+                floatingobjs[i].classList.add('first-bounce');
+            } else {
+                floatingobjs[i].classList.add('second-bounce');
+            }
+        }
+    },
     scrollTrigger: {
         trigger: '.js-hero-box',
         start: 'top center',
@@ -34,6 +44,7 @@ gsap.to('.js-first-arrow', {
     x: 0,
     opacity: 1,
     duration: 0.75,
+    delay: 0.5,
     ease: 'power1.inOut',
     stagger: 0.2,
     scrollTrigger: {
@@ -45,6 +56,7 @@ gsap.set('.js-second-arrow', { y: '20vw', opacity: 0 });
 gsap.to('.js-second-arrow', {
     y: 0,
     opacity: 1,
+    delay: 0.6,
     duration: 0.75,
     ease: 'power1.inOut',
     stagger: 0.1,
@@ -101,6 +113,7 @@ gsap.to('.js-up', {
     y: 0,
     opacity: 1,
     duration: 0.75,
+    delay: 0.3,
     ease: 'power1.inOut',
     scrollTrigger: {
         trigger: '.js-box',
@@ -167,5 +180,168 @@ gsap.to('.js-workmethod-left', {
     scrollTrigger: {
         trigger: '.js-workmethod-box',
         start: 'top 90%',
+    },
+});
+
+gsap.set('.background-name', { '--rotate': '30deg', '--y': '-50%', '--opacity': '0%', '--x': '0' });
+gsap.to('.background-name', {
+    duration: 0.75,
+    delay: 0.3,
+    '--y': '50%',
+    '--rotate': '-2deg',
+    '--opacity': '100%',
+    '--x': '-5px',
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-about-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-about-image', { x: '-20vw', scale: 0.8, opacity: 0 });
+gsap.to('.js-about-image', {
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 0.75,
+    delay: 0.2,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-about-box',
+        start: 'top 70%',
+    },
+});
+gsap.to('.js-dotted-spin', {
+    duration: 0.75,
+    ease: 'power1.inOut',
+    onStart: () => {
+        document.querySelectorAll('.js-dotted-spin').forEach(el => {
+            el.classList.add('svg-dotted');
+        });
+    },
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: '.js-about-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-about-left', { x: -100, opacity: 0 });
+gsap.to('.js-about-left', {
+    x: 0,
+    opacity: 1,
+    duration: 0.75,
+    delay: 0.4,
+    stagger: 0.2,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-about-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-about-right', { x: 100, opacity: 0 });
+gsap.to('.js-about-right', {
+    x: 0,
+    opacity: 1,
+    duration: 0.75,
+    delay: 0.2,
+    stagger: 0.2,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-about-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-about-up', { y: -100, opacity: 0 });
+gsap.to('.js-about-up', {
+    y: 0,
+    opacity: 1,
+    duration: 0.75,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-about-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-about-down', { y: 100, opacity: 0 });
+gsap.to('.js-about-down', {
+    y: 0,
+    opacity: 1,
+    duration: 0.75,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-about-box',
+        start: 'top 70%',
+    },
+});
+
+gsap.set('.js-contact-up', { y: -100, opacity: 0 });
+gsap.to('.js-contact-up', {
+    y: 0,
+    opacity: 1,
+    duration: 0.75,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-contact-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-contact-down', { y: 100, opacity: 0 });
+gsap.to('.js-contact-down', {
+    y: 0,
+    opacity: 1,
+    duration: 0.75,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-contact-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-contact-left', { x: -100, opacity: 0 });
+gsap.to('.js-contact-left', {
+    x: 0,
+    opacity: 1,
+    duration: 0.75,
+    delay: 0.4,
+    stagger: 0.2,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-contact-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-footer-left', { x: -100, opacity: 0 });
+gsap.to('.js-footer-left', {
+    x: 0,
+    opacity: 1,
+    duration: 0.75,
+    delay: 0.4,
+    stagger: 0.05,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-foote-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-footer-up', { y: -100, opacity: 0 });
+gsap.to('.js-footer-up', {
+    y: 0,
+    opacity: 1,
+    duration: 0.75,
+    stagger: 0.1,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-footer-box',
+        start: 'top 70%',
+    },
+});
+gsap.set('.js-footer-down', { y: 100, opacity: 0 });
+gsap.to('.js-footer-down', {
+    y: 0,
+    opacity: 1,
+    duration: 0.75,
+    stagger: 0.1,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-footer-box',
+        start: 'top 70%',
     },
 });
