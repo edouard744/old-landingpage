@@ -14,6 +14,7 @@ class Mailcontroller extends Controller
     {
         $name = $request->name;
         $email = $request->email;
+        $about = $request->about;
 
         $tel = $request->tel;
         $message = $request->message;
@@ -23,6 +24,7 @@ class Mailcontroller extends Controller
         $ValidationRules = [
             'name' => 'required',
             'email' => 'required',
+            'about' => 'required',
             'message' => 'required',
         ];
 
@@ -32,7 +34,7 @@ class Mailcontroller extends Controller
             return redirect('/contact')->withErrors($validator)->withInput();
         }
 
-        Mail::to('willems.edouard.pro@gmail.com')->send(new Contact($name, $email, $tel, $message));
+        Mail::to('willems.edouard.pro@gmail.com')->send(new Contact($name, $email, $about, $tel, $message));
 
         return redirect()->back()->with('succes', 'message de succes');
     }

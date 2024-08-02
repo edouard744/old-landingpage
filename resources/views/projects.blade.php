@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <div class="mb-6 w-10/12 max-w-md md:mb-0 md:w-1/2">
-                            <img class="w-full rounded-lg" src="{{ asset('storage/EasyInk.jpg') }}" alt="projet1" />
+                            <img class="w-full rounded-lg" src="{{ asset('storage/pression-pro.jpg') }}" alt="projet1" />
                         </div>
                     </article>
                 </div>

@@ -18,6 +18,7 @@ class Contact extends Mailable
     public function __construct(
         protected string $name,
         protected string $email,
+        protected string $about,
         protected string $tel,
         protected string $message
     ) {
@@ -29,7 +30,7 @@ class Contact extends Mailable
      */
     public function envelope(): Envelope
     {
-        return new Envelope(subject: 'Nouveau message formulaire de contact');
+        return new Envelope(subject: 'Nouveau message formulaire de contact : '.$this->about);
     }
 
     /**
@@ -42,6 +43,7 @@ class Contact extends Mailable
             with: [
                 'name' => $this->name,
                 'email' => $this->email,
+                'about' => $this->about,
                 'tel' => $this->tel,
                 'messages' => $this->message,
             ]

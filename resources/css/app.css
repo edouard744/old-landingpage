@@ -66,6 +66,12 @@ h1 {
 .bg-hero {
     background-image: url('http://localhost:8080/storage/background-mobile.png');
 }
+.bg-contact {
+    background-color: rgb(255, 255, 255);
+    background:
+        url('http://localhost:8080/storage/background-contact.png') repeat-x,
+        linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgba(195, 199, 253, 1) 100%);
+}
 @media (min-width: 768px) {
     .bg-hero {
         background-image: url('http://localhost:8080/storage/background-desktop.png');
