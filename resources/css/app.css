@@ -302,6 +302,37 @@ h1 {
     transition-delay: 0s;
 }
 
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 3.5rem;
+    aspect-ratio: 1;
+    font-size: 1.75rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    text-decoration: none;
+    outline: 1px solid transparent;
+    outline-offset: -8px;
+    fill: #fff;
+    background-image: linear-gradient(-135deg, transparent var(--fill), #fff var(--fill));
+    background-size: 100% 33.33%;
+
+    transition: 0.4s ease-in-out 0.4s;
+    transition-property: --fill, all;
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+    --fill: 0%;
+    color: #07071d;
+    outline-color: currentColor;
+
+    background-image: linear-gradient(transparent var(--fill), #fff var(--fill));
+    transition-delay: 0s;
+}
+
 .linear-gradient {
     background-image: linear-gradient(transparent 35%, rgba(0, 0, 0, 0.6));
 }
@@ -329,4 +360,125 @@ h1 {
     to {
         -webkit-transform: rotate(180deg);
     }
+}
+
+.buttons {
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 30px;
+}
+.blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.blob-btn:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #242bcc; /* Assuming $borderW = 2px */
+    border-radius: 30px;
+}
+
+.blob-btn:after {
+    content: '';
+    z-index: -2;
+    position: absolute;
+    left: 3px; /* Assuming $borderW = 2px, $borderW*1.5 = 3px */
+    top: 3px; /* Assuming $borderW = 2px, $borderW*1.5 = 3px */
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+}
+
+.blob-btn:hover,
+.blob-btn:focus-visible {
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.blob-btn:hover .blob-btn-color,
+.blob:focus-visible .blob-btn-color {
+    color: #242bcc;
+    transition:
+        all 0.5s,
+        color 0.1s;
+}
+
+.blob-btn:hover:after,
+.blob-btn:after:focus-visible {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #242bcc;
+}
+
+.blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.blob-btn__blob {
+    position: absolute;
+    top: 2px; /* Assuming $borderW = 2px */
+    width: calc(100% / 3); /* Assuming $numOfBlobs = 4 */
+    height: 100%;
+    background: white;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+}
+
+.blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+
+.blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+}
+
+.blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+}
+
+.blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+}
+
+.blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
 }

@@ -15,7 +15,7 @@
         <div class="js-hero-down">
             <a
                 href="/contact"
-                class="curtain-animation mx-auto block w-max rounded-full bg-blue-600 px-5 py-4 text-white delay-100 duration-100 hover:scale-110 hover:border-2 hover:border-blue-600 hover:text-xl hover:font-bold hover:text-blue-600 focus:scale-100 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600"
+                class="curtain-animation mx-auto block w-max rounded-full bg-blue-600 px-5 py-4 text-white delay-100 duration-100 hover:scale-105 hover:border-2 hover:border-blue-600 hover:text-xl hover:font-bold hover:text-blue-600 focus:scale-105 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600"
             >
                 Discutons de votre projet !
             </a>
