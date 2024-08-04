@@ -363,14 +363,14 @@ h1 {
 }
 
 .buttons {
-    margin-top: 50px;
     text-align: center;
     border-radius: 30px;
 }
+
 .blob-btn {
     z-index: 1;
     position: relative;
-    padding: 20px 46px;
+    padding: 15px 46px;
     margin-bottom: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -393,7 +393,7 @@ h1 {
     width: 100%;
     height: 100%;
     border: 2px solid #242bcc; /* Assuming $borderW = 2px */
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 .blob-btn:after {
@@ -409,13 +409,13 @@ h1 {
 }
 
 .blob-btn:hover,
-.blob-btn:focus-visible {
+.blob-btn:focus-within {
     font-weight: bold;
     border-radius: 30px;
 }
 
 .blob-btn:hover .blob-btn-color,
-.blob:focus-visible .blob-btn-color {
+.blob-btn:focus-within .blob-btn-color {
     color: #242bcc;
     transition:
         all 0.5s,
@@ -423,7 +423,7 @@ h1 {
 }
 
 .blob-btn:hover:after,
-.blob-btn:after:focus-visible {
+.blob-btn:focus-within:after {
     transition: all 0.3s;
     left: 0;
     top: 0;
@@ -438,7 +438,7 @@ h1 {
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 15px;
     background: #242bcc;
 }
 
@@ -479,6 +479,20 @@ h1 {
     transition-delay: 0.24s;
 }
 
-.blob-btn:hover .blob-btn__blob {
+.blob-btn:hover .blob-btn__blob,
+.blob-btn:focus-within .blob-btn__blob {
     transform: translateZ(0) scale(1.7);
+}
+
+.blob:focus {
+    outline: none;
+}
+
+.blob:focus + x-arrowSvg {
+    visibility: visible;
+    top: 1rem;
+    opacity: 1;
+    transition:
+        top 0.3s,
+        opacity 0.3s;
 }

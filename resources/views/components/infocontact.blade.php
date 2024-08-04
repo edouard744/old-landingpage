@@ -1,7 +1,7 @@
 <div {{ $attributes->merge(['class' => '']) }}>
-    <span class="mb-4 block text-3xl font-semibold">Contactez moi</span>
+    <span class="js-contact-up mb-4 block text-3xl font-semibold">Contactez moi</span>
     <div class="flex flex-col gap-8 border-b-2 pb-4">
-        <div class="flex gap-1">
+        <div class="js-contact-down flex gap-1">
             <svg class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0">
                 <path
                     d="m83.094 75 5.3125 5.3125c-1.2578 0.60938-2.6328 0.92969-4.0312 0.9375h-68.75c-1.3984-0.007812-2.7734-0.32812-4.0312-0.9375l27.719-27.719 5.1562 4.625c1.5117 1.3789 3.4844 2.1484 5.5312 2.1562 2.0547-0.023438 4.0312-0.78906 5.5625-2.1562l5.125-4.5938zm-34.375-22.469c0.36328 0.375 0.86719 0.58984 1.3906 0.58984s1.0273-0.21484 1.3906-0.58984l30.594-27.531 6.0625-5.4375c-1.1914-0.52734-2.4805-0.80469-3.7812-0.8125h-68.75c-1.3008 0.007812-2.5898 0.28516-3.7812 0.8125l6.0625 5.4375zm-13.969-4.125-22.25-19.844-5.1875-4.6562c-0.69141 1.3008-1.0547 2.7461-1.0625 4.2188v43.75c0.003906 1.3867 0.32422 2.7578 0.9375 4l5.3125-5.3125zm57.938-24.5-5.1875 4.6562-22.156 19.844 22.156 22.188 5.3125 5.3125c0.60938-1.2578 0.92969-2.6328 0.9375-4.0312v-43.75c-0.007812-1.4727-0.37109-2.918-1.0625-4.2188z"
@@ -9,13 +9,13 @@
             </svg>
             <div class="flex flex-col">
                 <span class="text-xl font-semibold">Email</span>
-                <span class="font-medium">
+                <a href="mailto:contact@willems-edouard.be" class="font-medium hover:underline focus:underline">
                     contact
                     @willems-edouard.be
-                </span>
+                </a>
             </div>
         </div>
-        <div class="flex gap-1">
+        <div class="js-contact-down flex gap-1">
             <svg class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0">
                 <path
                     d="m89.684 70.414-10.082-10.082c-2.3438-2.3828-6-2.6133-8.668-0.6875l-2.457 1.793s18.168 18.18 20.023 20l1.6875-2.125c2.125-2.6445 1.918-6.4805-0.5-8.8945z"
@@ -29,19 +29,23 @@
             </svg>
             <div class="flex flex-col">
                 <span class="text-xl font-semibold">Téléphone</span>
-                <span class="font-medium">+32 498 043 730</span>
+                <a href="tel:+32498043730" class="font-medium hover:underline focus:underline">+32 498 043 730</a>
             </div>
         </div>
     </div>
     <div class="flex flex-col gap-4 pb-4">
-        <span class="text-xl font-semibold">Réseaux</span>
-        <div class="flex gap-2">
-            <a target="_blank" href="#" class="social-icon">
-                <x-facebooksvg class="h-7 w-7" />
-            </a>
-            <a target="_blank" href="#" class="social-icon">
-                <x-linkedinsvg class="h-6 w-6" />
-            </a>
+        <span class="js-contact-right text-xl font-semibold">Réseaux</span>
+        <div class="flex">
+            <div class="js-contact-right flex basis-16">
+                <a target="_blank" href="#" class="social-icon">
+                    <x-facebooksvg class="h-7 w-7" />
+                </a>
+            </div>
+            <div class="js-contact-right flex basis-16">
+                <a target="_blank" href="#" class="social-icon">
+                    <x-linkedinsvg class="h-6 w-6" />
+                </a>
+            </div>
         </div>
     </div>
 </div>

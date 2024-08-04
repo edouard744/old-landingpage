@@ -317,7 +317,7 @@ gsap.to('.js-footer-left', {
     stagger: 0.05,
     ease: 'power1.inOut',
     scrollTrigger: {
-        trigger: '.js-foote-box',
+        trigger: '.js-footer-box',
         start: 'top 70%',
     },
 });

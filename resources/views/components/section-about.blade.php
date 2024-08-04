@@ -1,7 +1,7 @@
 <section class="bg-grey-800 px-9 py-32 text-white lg:grid lg:grid-cols-2 xl:gap-x-10">
     <div class="mx-auto mb-10 w-max md:mb-0 lg:mx-0 lg:flex lg:flex-col lg:justify-end">
         <h2 class="js-about-left js-about-box mb-4 font-bold">À propos de moi</h2>
-        <span class="text-scale block js-about-up font-bold">Salut !</span>
+        <span class="text-scale js-about-up block font-bold">Salut !</span>
         <span class="text-scale js-about-up block font-bold">
             Je suis
             <em class="background-name relative z-10 inline-block not-italic">Edouard</em>
@@ -10,14 +10,14 @@
 
     <x-image
         image="storage/about.png"
-        hdimage="storage/about.png"
+        hdimage="storage/about-hd.png"
         alt="Une image de moi"
         containerClass="block js-about-image w-full mb-10 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:place-self-center mx-auto lg:mx-0 max-w-lg lg:mb-0 xl:place-self-end xl:my-auto"
         imageClass="w-full "
     />
     <div class="block max-w-xl sm:mx-auto md:mt-10 lg:mx-0">
         <p class="js-about-down mb-6 hyphens-auto text-lg">
-            J’ai 22 ans et je suis un passionné de développement web dans la région de Liège qui viens tout juste de
+            J’ai 22 ans et je suis un passionné de développement web dans la région de liège qui viens fraichement de
             terminer son bachelier.
         </p>
         <div>
@@ -51,7 +51,7 @@
 
                 <p class="js-about-right mb-6 hyphens-auto">
                     Je me lance dans l’aventure du développement web en solo avec l’envie d’apprendre de nouvelles
-                    choses, de démontrer mes compétences, et surtout, de contribuer à la réussite de projets inspirants.
+                    choses, de démontrer mes compétences.
                 </p>
             </div>
             <div class="flex w-full gap-4">
@@ -88,7 +88,7 @@
 
                 <p class="js-about-right hyphens-auto">
                     Mon objectif est d’apporter une valeur ajoutée concrète tout en grandissant professionnellement à
-                    chaque nouvelle expérie nce.
+                    chaque nouvelle expérience et surtout, de contribuer à la réussite de projets inspirants.
                 </p>
             </div>
         </div>

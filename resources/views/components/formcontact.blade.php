@@ -1,5 +1,5 @@
 <div {{ $attributes->merge(['class' => '']) }}>
-    <span class="mb-4 block text-3xl font-semibold text-blue-800">Envoyez moi un message</span>
+    <span class="mb-4 block text-3xl font-semibold text-blue-800 js-contact-down">Envoyez moi un message</span>
     <form class="block" action="/contact" method="POST">
         @csrf
         @if (session()->has('succes'))
@@ -28,7 +28,7 @@
         @endif
 
         <div class="grid grid-cols-2 gap-4">
-            <div class="col-span-2 flex flex-col gap-1 md:col-span-1">
+            <div class="js-contact-down col-span-2 flex flex-col gap-1 md:col-span-1">
                 <label for="name" class="text-lg font-medium text-blue-900">Nom*</label>
 
                 <input
@@ -44,7 +44,7 @@
                     <span class="text-sm text-red-500">* Ce champ est obligatoires</span>
                 @enderror
             </div>
-            <div class="col-span-2 flex flex-col gap-1 md:col-span-1">
+            <div class="js-contact-down col-span-2 flex flex-col gap-1 md:col-span-1">
                 <label for="tel" class="text-lg font-medium text-blue-900">Téléphone</label>
                 <input
                     type="tel"
@@ -55,7 +55,7 @@
                     class="w-full rounded-md border border-grey-500 bg-[#FCFCFC] px-4 py-2 focus:border-blue-500 focus:outline-none"
                 />
             </div>
-            <div class="col-span-2 flex flex-col gap-1 md:col-span-1">
+            <div class="js-contact-down col-span-2 flex flex-col gap-1 md:col-span-1">
                 <label for="email" class="text-lg font-medium text-blue-900">Email*</label>
 
                 <input
@@ -70,7 +70,7 @@
                     <span class="text-sm text-red-500">* Ce champ est obligatoires</span>
                 @enderror
             </div>
-            <div class="col-span-2 flex flex-col gap-1 md:col-span-1">
+            <div class="js-contact-down col-span-2 flex flex-col gap-1 md:col-span-1">
                 <label for="about" class="text-lg font-medium text-blue-900">Sujet*</label>
                 <input
                     type="text"
@@ -84,7 +84,7 @@
                     <span class="text-sm text-red-500">* Ce champ est obligatoires</span>
                 @enderror
             </div>
-            <div class="col-span-2 flex flex-col gap-1">
+            <div class="js-contact-down col-span-2 flex flex-col gap-1">
                 <label for="message" class="text-lg font-medium text-blue-900">Message*</label>
                 <textarea
                     name="message"
@@ -98,16 +98,16 @@
                 @enderror
             </div>
 
-            <div class="buttons w-max">
+            <div class="buttons js-contact-down my-4 w-max">
                 <div class="blob-btn group flex justify-center gap-4 font-medium">
                     <button
                         type="submit"
-                        class="blob-btn-color blob relative left-5 text-xl group-hover:left-0 group-hover:underline"
+                        class="blob-btn-color blob peer relative left-5 text-xl focus:left-0 focus:underline group-hover:left-0 group-hover:underline"
                     >
                         Envoyer
                     </button>
                     <x-arrowSvg
-                        class="invisible blob-btn-color relative top-5 fill-white opacity-0 group-hover:visible group-hover:top-1 group-hover:opacity-100"
+                        class="blob-btn-color invisible relative top-5 fill-white opacity-0 group-hover:visible group-hover:top-1 group-hover:opacity-100 peer-focus-visible:visible peer-focus-visible:top-1 peer-focus-visible:opacity-100"
                     />
                     <div class="blob-btn__inner">
                         <div class="blob-btn__blobs">
