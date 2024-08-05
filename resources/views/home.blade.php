@@ -3,7 +3,6 @@
     <x-head
         description="Willems Edouard, jeune développeur web belge fraîchement diplômé."
         title="Willems Edouard Portfolio"
-        js="app.js"
     />
     <x-body>
         <x-main-nav />

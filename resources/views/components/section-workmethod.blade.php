@@ -1,4 +1,6 @@
-<section class="js-workmethod-box bg-workmethod-mobile bg-blue-800 bg-cover bg-right py-20 text-white">
+<section
+    class="js-workmethod-box bg-blue-800 bg-[url('/storage/app/public/workmethod_mobile.png')] bg-cover bg-right py-20 text-white"
+>
     <div class="flex flex-col items-center px-4 md:mx-auto md:grid md:max-w-5xl md:grid-cols-2 md:items-start md:gap-8">
         <h2 class="js-workmethod-up text-scale-sm mb-10 font-bold">Mon approche de travail</h2>
         <div class="js-workmethod-down mb-20 md:mb-0">

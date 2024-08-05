@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <x-head description="Mes projets" title="Willems Edouard : Projets" js="projects.js" />
+    <x-head description="Mes projets" title="Willems Edouard : Projets" />
 
     <x-body>
         <x-main-nav />
         <section class="bg-contact min-h-screen">
             <div class="relative mx-auto w-full max-w-7xl py-20">
                 <h1 class="mb-10 text-center font-bold text-blue-900">Mes projets</h1>
-                <div class="mb-20 mx-2 flex justify-center">
+                <div class="mx-2 mb-20 flex justify-center">
                     <a
                         class="js-project group relative mx-8 w-full max-w-2xl rounded-lg lg:max-w-5xl"
                         target="_blank"
@@ -24,7 +24,7 @@
                             <div
                                 class="linear-gradient hidden h-full w-full items-start justify-center gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex group-focus:flex"
                             >
-                                <span class="max-w-2xl md:text-xl font-medium xl:text-2xl">
+                                <span class="max-w-2xl font-medium md:text-xl xl:text-2xl">
                                     PressionPro : Création d'un site pour un indépendant en nettoyage haute pression
                                 </span>
                                 <div class="white rounded-full bg-grey-50 p-1">

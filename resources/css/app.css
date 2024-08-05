@@ -69,7 +69,7 @@ h1 {
 .bg-contact {
     background-color: rgb(255, 255, 255);
     background:
-        url('/storage/app/public/background-contact.png') repeat-x,
+        url('http://localhost:8080/storage/background-contact.png') repeat-x,
         linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgba(195, 199, 253, 1) 100%);
 }
 @media (min-width: 768px) {
@@ -78,9 +78,6 @@ h1 {
     }
 }
 
-.bg-workmethod-mobile {
-    background-image: url('/storage/app/public/workmethod_mobile.png ');
-}
 .top-burger-menu {
     background: transparent;
 }
