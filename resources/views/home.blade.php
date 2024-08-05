@@ -5,7 +5,6 @@
         title="Willems Edouard Portfolio"
         js="app.js"
     />
-
     <x-body>
         <x-main-nav />
         <div class="fixed-section">
