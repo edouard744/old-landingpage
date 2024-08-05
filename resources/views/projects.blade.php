@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <x-head description="Mes projets" title="Willems Edouard : Projets" />
+    <x-head description="Mes projets" title="Willems Edouard : Projets" js="projects.js" />
 
     <x-body>
         <x-main-nav />
-        <section class="bg-hero h-screen bg-cover bg-top xl:bg-indigo-800">
+        <section class="bg-contact min-h-screen">
             <div class="relative mx-auto w-full max-w-7xl py-20">
                 <h1 class="mb-10 text-center font-bold text-blue-900">Mes projets</h1>
-                <div class="mb-20 flex flex-col items-center gap-6">
-                    <article
-                        class="relative flex w-max max-w-full scale-100 flex-col items-center justify-between rounded-xl border-2 border-grey-100 bg-white p-2 py-8 shadow-lg duration-150 has-[:hover]:scale-[101%] md:flex-row md:p-8 lg:max-w-7xl"
+                <div class="mb-20 mx-2 flex justify-center">
+                    <a
+                        class="js-project group relative mx-8 w-full max-w-2xl rounded-lg lg:max-w-5xl"
+                        target="_blank"
+                        href="https://pression-pro.be/"
                     >
-                        <div class="mb-6 flex flex-col md:mb-0">
-                            <h2 class="mb-6 text-2xl">Pression Pro</h2>
-                            <p class="max-w-xs">
-                                EasyInk : un CRM pour tatoueur, un projet réalisé lors de mon travail de fin d'étude
-                            </p>
-                            <a class="absolute left-0 top-0 z-20 h-full w-full" href="/projects/easyink">
-                                <span class="sr-only">Liens vers le projets EasyInk</span>
-                            </a>
-                            <div class="mt-6 flex items-center gap-2">
-                                <span class="text-purple-light">En savoir plus</span>
-                                <svg
-                                    width="24"
-                                    height="21"
-                                    viewBox="0 0 24 21"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M14.3299 19.7815L23.9399 10.1215L14.3299 0.461542C14.2432 0.347569 14.1329 0.253573 14.0066 0.18592C13.8803 0.118266 13.741 0.0785337 13.598 0.0694121C13.4551 0.0602904 13.3118 0.081993 13.178 0.13305C13.0441 0.184107 12.9228 0.263326 12.8222 0.365345C12.7216 0.467364 12.6442 0.589801 12.595 0.724366C12.5459 0.858932 12.5262 1.00248 12.5374 1.14531C12.5486 1.28813 12.5903 1.42688 12.6597 1.55218C12.7292 1.67748 12.8247 1.78639 12.9399 1.87154L20.1299 9.12154L0.999941 9.12154C0.734724 9.12154 0.480372 9.2269 0.292835 9.41443C0.105299 9.60197 -5.91278e-05 9.85633 -5.91278e-05 10.1215C-5.91278e-05 10.3868 0.105299 10.6411 0.292835 10.8286C0.480372 11.0162 0.734724 11.1215 0.999941 11.1215L20.1299 11.1215L12.9399 18.3715C12.753 18.5598 12.6484 18.8147 12.6494 19.0801C12.6503 19.3454 12.7566 19.5996 12.9449 19.7865C13.1332 19.9735 13.3881 20.078 13.6535 20.0771C13.9188 20.0762 14.173 19.9698 14.3599 19.7815H14.3299Z"
-                                        fill="#D0A1FF"
-                                    />
-                                </svg>
+                        <img
+                            class="z-20 h-full w-full rounded-lg object-cover"
+                            src="{{ asset('storage/pression-pro.jpg') }}"
+                            alt="projet1"
+                        />
+                        <div
+                            class="transition-02 absolute bottom-20 flex w-full flex-col items-end justify-end gap-4 text-white opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-focus:bottom-0 group-focus:opacity-100"
+                        >
+                            <div
+                                class="linear-gradient hidden h-full w-full items-start justify-center gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex group-focus:flex"
+                            >
+                                <span class="max-w-2xl md:text-xl font-medium xl:text-2xl">
+                                    PressionPro : Création d'un site pour un indépendant en nettoyage haute pression
+                                </span>
+                                <div class="white rounded-full bg-grey-50 p-1">
+                                    <svg
+                                        class="h-10 w-10 fill-grey-800"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1"
+                                        x="0px"
+                                        y="0px"
+                                        viewBox="0 -12 100 125"
+                                        xml:space="preserve"
+                                    >
+                                        <g>
+                                            <path
+                                                d="M83.3,79.7c0,2-1.6,3.6-3.6,3.6H20.3c-2,0-3.6-1.6-3.6-3.6V20.3c0-2,1.6-3.6,3.6-3.6h23.4V9.5H20.3   c-6,0-10.8,4.8-10.8,10.8v59.4c0,6,4.8,10.8,10.8,10.8h59.4c6,0,10.8-4.8,10.8-10.8V56.3h-7.2V79.7z"
+                                            />
+                                            <polygon
+                                                points="56.3,9.5 56.3,16.7 78.2,16.7 49.9,45 55,50.1 83.3,21.8 83.3,43.7 90.5,43.7 90.5,9.5  "
+                                            />
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-6 w-10/12 max-w-md md:mb-0 md:w-1/2">
-                            <img class="w-full rounded-lg" src="{{ asset('storage/pression-pro.jpg') }}" alt="projet1" />
-                        </div>
-                    </article>
+                    </a>
                 </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 <div {{ $attributes->merge(['class' => '']) }}>
     <span class="js-contact-up mb-4 block text-3xl font-semibold">Contactez moi</span>
-    <div class="flex flex-col gap-8 border-b-2 pb-4">
+    <div class="flex flex-col js-contact-up gap-8 border-b-2 pb-4">
         <div class="js-contact-down flex gap-1">
             <svg class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0">
                 <path

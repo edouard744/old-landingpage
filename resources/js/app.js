@@ -65,27 +65,43 @@ gsap.to('.js-second-arrow', {
         start: 'bottom center',
     },
 });
-
-gsap.set('.js-service-down', { y: '-10vw', opacity: 0 });
-gsap.to('.js-service-down', {
-    y: 0,
-    opacity: 1,
-    duration: 0.75,
-    ease: 'power1.inOut',
-    stagger: 0.2,
-    scrollTrigger: {
-        trigger: '.js-intro-trigger',
-        start: 'bottom center',
-    },
+document.querySelectorAll('.js-group-up').forEach(group => {
+    gsap.set(group.querySelectorAll('.js-service-up'), { y: '100px', opacity: 0 });
+    gsap.to(group.querySelectorAll('.js-service-up'), {
+        y: 0,
+        opacity: 1,
+        duration: 0.75,
+        ease: 'power1.inOut',
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: '.js-intro-trigger',
+            start: 'bottom center',
+        },
+    });
 });
-
-gsap.set('.js-service-up', { y: '10vw', opacity: 0 });
-gsap.to('.js-service-up', {
+document.querySelectorAll('.js-group-down').forEach(group => {
+    gsap.set(group.querySelectorAll('.js-service-down'), { y: '-100px', opacity: 0 });
+    gsap.to(group.querySelectorAll('.js-service-down'), {
+        y: 0,
+        opacity: 1,
+        duration: 0.75,
+        ease: 'power1.inOut',
+        stagger: {
+            amount: 0.2, // Durée totale du stagger
+            from: 'end', // Inverse l'ordre du stagger
+        },
+        scrollTrigger: {
+            trigger: '.js-intro-trigger',
+            start: 'bottom center',
+        },
+    });
+});
+gsap.set('.js-intro-down', { y: -100, opacity: 0 });
+gsap.to('.js-intro-down', {
     y: 0,
     opacity: 1,
-    delay: 0.2,
-    stagger: 0.2,
     duration: 0.75,
+    stagger: 0.1,
     ease: 'power1.inOut',
     scrollTrigger: {
         trigger: '.js-intro-trigger',
@@ -153,7 +169,7 @@ gsap.to('.js-workmethod-down', {
     stagger: 0.2,
     scrollTrigger: {
         trigger: '.js-workmethod-box',
-        start: 'top 90%',
+        start: 'top 70%',
     },
 });
 
@@ -170,7 +186,7 @@ gsap.to('.js-workmethod-up', {
         start: 'top 90%',
     },
 });
-gsap.set('.js-workmethod-left', { x: '-20vw', opacity: 0 });
+gsap.set('.js-workmethod-left', { x: '-10vw', opacity: 0 });
 gsap.to('.js-workmethod-left', {
     x: 0,
     opacity: 1,
