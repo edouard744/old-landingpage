@@ -26,7 +26,7 @@
                     class="transition-02 absolute bottom-20 flex flex-col items-end justify-end gap-4 text-white opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-focus:bottom-0 group-focus:opacity-100"
                 >
                     <div
-                        class="linear-gradient hidden h-full w-full items-start gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex group-focus:flex"
+                        class="linear-gradient hidden h-full w-full items-start gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex"
                     >
                         <span class="max-w-sm hyphens-auto text-justify text-xl font-medium">
                             PressionPro: Création d'un site pour un indépendant en nettoyage haute pression

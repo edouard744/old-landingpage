@@ -1,0 +1,29 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BUCDeDTT.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-lh1kmXrf.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "storage/app/public/background-contact.png": {
+    "file": "assets/background-contact-DaaV7f_5.png",
+    "src": "storage/app/public/background-contact.png"
+  },
+  "storage/app/public/background-desktop.png": {
+    "file": "assets/background-desktop-D7Q-Ru_t.png",
+    "src": "storage/app/public/background-desktop.png"
+  },
+  "storage/app/public/background-mobile.png": {
+    "file": "assets/background-mobile-B-cHiffp.png",
+    "src": "storage/app/public/background-mobile.png"
+  },
+  "storage/app/public/workmethod_mobile.png": {
+    "file": "assets/workmethod_mobile-C4iFD9q1.png",
+    "src": "storage/app/public/workmethod_mobile.png"
+  }
+}

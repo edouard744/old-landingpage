@@ -291,7 +291,7 @@ gsap.to('.js-about-down', {
 });
 
 gsap.set('.js-contact-section-up', { y: -100, opacity: 0 });
-gsap.to('.js-contact-up', {
+gsap.to('.js-contact-section-up', {
     y: 0,
     opacity: 1,
     duration: 0.75,
