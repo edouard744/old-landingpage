@@ -1,5 +1,5 @@
 <div {{ $attributes->merge(['class' => '']) }}>
-    <span class="mb-4 block text-3xl font-semibold text-blue-800 js-contact-down">Envoyez moi un message</span>
+    <span class="js-contact-down mb-4 block text-3xl font-semibold text-blue-800">Envoyez moi un message</span>
     <form class="block" action="/contact" method="POST">
         @csrf
         @if (session()->has('succes'))
@@ -106,7 +106,7 @@
                     >
                         Envoyer
                     </button>
-                    <x-arrowSvg
+                    <x-arrow-svg
                         class="blob-btn-color invisible relative top-5 fill-white opacity-0 group-hover:visible group-hover:top-1 group-hover:opacity-100 peer-focus-visible:visible peer-focus-visible:top-1 peer-focus-visible:opacity-100"
                     />
                     <div class="blob-btn__inner">

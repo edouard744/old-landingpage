@@ -20,14 +20,14 @@
                 Discutons de votre projet !
             </a>
         </div>
-        <x-codesvg
+        <x-code-svg
             class="js-floating js-hero-up absolute right-5 top-60 sm:right-10 sm:top-52 sm:h-12 sm:w-12 md:right-20 md:top-56 lg:right-44 lg:top-64"
         />
-        <x-websvg
+        <x-web-svg
             class="js-floating js-hero-up absolute right-5 top-36 sm:right-4 sm:top-28 sm:h-10 sm:w-10 md:right-8 md:top-32 lg:right-32"
         />
-        <x-mailsvg class="js-floating js-hero-up absolute top-7 sm:left-6 md:left-0 md:top-20 lg:left-20" />
-        <x-wordpresssvg
+        <x-mail-svg class="js-floating js-hero-up absolute top-7 sm:left-6 md:left-0 md:top-20 lg:left-20" />
+        <x-wordpress-svg
             class="js-floating js-hero-down absolute left-5 top-40 sm:top-32 md:left-2 md:top-52 lg:left-28 lg:top-48"
         />
     </div>

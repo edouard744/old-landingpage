@@ -15,12 +15,12 @@
             <div class="flex gap-2">
                 <div class="js-footer-left flex basis-12">
                     <a target="_blank" href="#" class="social-icon">
-                        <x-facebooksvg class="h-7 w-7" />
+                        <x-facebook-svg class="h-7 w-7" />
                     </a>
                 </div>
                 <div class="js-footer-left flex basis-12">
                     <a target="_blank" href="#" class="social-icon">
-                        <x-linkedinsvg class="h-6 w-6" />
+                        <x-linkedin-svg class="h-6 w-6" />
                     </a>
                 </div>
             </div>

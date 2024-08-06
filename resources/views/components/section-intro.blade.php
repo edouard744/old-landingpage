@@ -13,11 +13,11 @@
             </p>
         </div>
         <div class="relative grid-cols-2 gap-20 lg:mb-20 lg:grid">
-            <x-doublearrowsvg
+            <x-double-arrow-svg
                 class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform lg:block"
             />
-            <div class="mb-20 flex js-group-down flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
-                <x-createsvg class="js-service-down" />
+            <div class="js-group-down mb-20 flex flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
+                <x-create-svg class="js-service-down" />
                 <span class="js-service-down text-3xl font-semibold text-blue-900">Création</span>
                 <p class="js-service-down max-w-md text-xl font-medium">
                     Je conçois et développe votre site web de A à Z. Vous partagez votre vision, et je m’occupe du
@@ -25,7 +25,7 @@
                 </p>
             </div>
             <div class="js-group-down mb-20 flex flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
-                <x-cleaningsvg class="js-service-down" />
+                <x-cleaning-svg class="js-service-down" />
                 <span class="js-service-down text-3xl font-semibold text-blue-900">Remise à neuf</span>
                 <p class="js-service-down max-w-md text-xl font-medium">
                     Je modernise et entretiens votre site existant, en le mettant à jour avec les dernières tendances et
@@ -33,7 +33,7 @@
                 </p>
             </div>
             <div class="js-group-up mb-20 flex flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
-                <x-learningsvg class="js-service-up" />
+                <x-learning-svg class="js-service-up" />
                 <span class="js-service-up text-3xl font-semibold text-blue-900">Prise en main</span>
                 <p class="js-service-up max-w-md text-xl font-medium">
                     Je vous forme pour utiliser votre site en toute autonomie, que ce soit pour gérer le contenu ou
@@ -41,7 +41,7 @@
                 </p>
             </div>
             <div class="js-group-up mb-20 flex flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
-                <x-communicatesvg class="js-service-up" />
+                <x-communicate-svg class="js-service-up" />
                 <span class="js-service-up text-3xl font-semibold text-blue-900">Communication</span>
                 <p class="js-service-up max-w-md text-xl font-medium">
                     Je vous accompagne pour créer et optimiser vos réseaux sociaux et autre outils de communication,
