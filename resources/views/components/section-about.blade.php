@@ -1,13 +1,12 @@
 <section class="bg-grey-800 px-9 py-32 text-white lg:grid lg:grid-cols-2 xl:gap-x-10">
-    <div class="mx-auto mb-10 w-max md:mb-0 lg:mx-0 lg:flex lg:flex-col lg:justify-end">
+    <div class="mx-auto text-center sm:text-left mb-10 w-max md:mb-0 lg:mx-0 lg:flex lg:flex-col lg:justify-end">
         <h2 class="js-about-left js-about-box mb-4 font-bold">À propos de moi</h2>
         <span class="text-scale js-about-up block font-bold">Salut !</span>
-        <span class="text-scale js-about-up block font-bold">
+        <span class="text-scale js-about-up block font-bold max-w-[80vw]">
             Je suis
             <em class="background-name relative z-10 inline-block not-italic">Edouard</em>
         </span>
     </div>
-
     <x-image
         image="storage/about.png"
         hdimage="storage/about-hd.png"
