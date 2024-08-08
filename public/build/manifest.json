@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-BUCDeDTT.css",
+    "file": "assets/app-CT_meANR.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -21,6 +21,22 @@
   "storage/app/public/background-mobile.png": {
     "file": "assets/background-mobile-B-cHiffp.png",
     "src": "storage/app/public/background-mobile.png"
+  },
+  "storage/app/public/fonts/Poppins-Bold.ttf": {
+    "file": "assets/Poppins-Bold-qTAUjFF7.ttf",
+    "src": "storage/app/public/fonts/Poppins-Bold.ttf"
+  },
+  "storage/app/public/fonts/Poppins-Medium.ttf": {
+    "file": "assets/Poppins-Medium-Cxde2ZoM.ttf",
+    "src": "storage/app/public/fonts/Poppins-Medium.ttf"
+  },
+  "storage/app/public/fonts/Poppins-Regular.ttf": {
+    "file": "assets/Poppins-Regular-CTKNfV9P.ttf",
+    "src": "storage/app/public/fonts/Poppins-Regular.ttf"
+  },
+  "storage/app/public/fonts/Poppins-SemiBold.ttf": {
+    "file": "assets/Poppins-SemiBold-B_fPDAUb.ttf",
+    "src": "storage/app/public/fonts/Poppins-SemiBold.ttf"
   },
   "storage/app/public/workmethod_mobile.png": {
     "file": "assets/workmethod_mobile-C4iFD9q1.png",
