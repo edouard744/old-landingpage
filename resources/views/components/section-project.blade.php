@@ -5,7 +5,7 @@
             <div class="js-down">
                 <a
                     href="/projects"
-                    class="slide mx-auto block w-max rounded-full border-2 bg-blue-600 px-6 py-3 text-xl font-medium text-white delay-100 duration-100 hover:scale-105 hover:border-2 hover:border-blue-600 hover:bg-gray-50 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600"
+                    class="slide mx-auto block w-max rounded-full border-2 bg-blue-600 px-6 py-3 text-xl font-medium text-white delay-100 duration-100 hover:scale-105 hover:border-2 hover:border-blue-600 hover:bg-gray-50 hover:font-bold hover:text-blue-600 focus-visible:border-2 focus-visible:border-blue-600 focus-visible:font-bold focus-visible:text-blue-600"
                 >
                     Voir la page projets
                 </a>

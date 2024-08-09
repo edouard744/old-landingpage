@@ -360,7 +360,7 @@ h1 {
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7) 60%);
 }
 .slide:hover,
-.slide:focus {
+.slide:focus-visible {
     box-shadow: inset 20em 0 0 0 white;
 }
 .svg-dotted {

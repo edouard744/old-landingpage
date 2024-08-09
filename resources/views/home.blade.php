@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <x-head
         description="Willems Edouard, jeune développeur web belge fraîchement diplômé."
-        title="Willems Edouard Portfolio"
+        title="Willems Edouard"
     />
     <x-body>
         <x-main-nav />

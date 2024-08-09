@@ -12,7 +12,7 @@
                 esse.
             </p>
         </div>
-        <div class="relative grid-cols-2 gap-20 lg:mb-20 lg:grid">
+        <div class="relative grid-cols-2 gap-20 lg:mb-40 lg:grid">
             <x-double-arrow-svg
                 class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform lg:block"
             />
