@@ -126,7 +126,7 @@ mm.add('(min-width: 1024px)', () => {
         ease: 'power1.inOut',
     });
 });
-mm.add('(max-width: 1023cpx)', () => {
+mm.add('(max-width: 1023px)', () => {
     gsap.to(window, {
         immediateRender: false,
         scrollTrigger: {
