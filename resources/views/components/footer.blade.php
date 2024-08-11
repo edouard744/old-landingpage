@@ -1,4 +1,4 @@
-<footer class="bg-footer js-footer-box overflow-hidden pt-10 text-white" {{ $attributes }}>
+<footer class="bg-footer js-footer-box overflow-hidden px-4 md:px-8 pt-10 text-white" {{ $attributes }}>
     <div class="js-footer-up mx-auto mb-14 flex max-w-7xl flex-col gap-4 border-b-2 px-10 pb-10 lg:px-0">
         <span class="js-footer-up text-xl font-bold">Willems Edouard</span>
         <span class="js-footer-up text-xl">Transformer votre vision en réalité digital</span>
@@ -28,7 +28,8 @@
         <div class="js-footer-left mb-10 flex flex-col justify-center gap-6 md:justify-start">
             <span class="js-footer-left text-xl font-bold">Informations</span>
             <a href="mailto:contact@willems-edouard.be" class="js-footer-left hover:underline focus:underline">
-                Mail : contact@willems-edouard.be
+                Mail : contact
+                @willems-edouard.be
             </a>
             <a href="tel:+32498043730" class="js-footer-left hover:underline focus:underline">Tel : 04 98 04 37 30</a>
         </div>

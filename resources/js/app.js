@@ -110,19 +110,38 @@ gsap.to('.js-intro-down', {
     },
 });
 
-//Scroll from hero to intro section
-gsap.to(window, {
-    immediateRender: false,
-    scrollTrigger: {
-        trigger: '.js-intro-box',
-        start: 'top 99%',
-        end: 'bottom 100%',
-        toggleActions: 'play complete none none',
-    },
-    duration: 0.65,
-    scrollTo: { y: '#intro-header' },
-    ease: 'power1.inOut',
+let mm = gsap.matchMedia();
+
+mm.add('(min-width: 1024px)', () => {
+    gsap.to(window, {
+        immediateRender: false,
+        scrollTrigger: {
+            trigger: '.js-intro-box',
+            start: 'top 97%',
+            end: 'bottom 100%',
+            toggleActions: 'play complete none none',
+        },
+        duration: 0.65,
+        scrollTo: { y: '#intro-header' },
+        ease: 'power1.inOut',
+    });
 });
+mm.add('(max-width: 1023cpx)', () => {
+    gsap.to(window, {
+        immediateRender: false,
+        scrollTrigger: {
+            trigger: '.js-intro-box',
+            start: 'top 85%',
+            end: 'bottom 100%',
+            toggleActions: 'play complete none none',
+        },
+        duration: 0.65,
+        scrollTo: { y: '#intro-header' },
+        ease: 'power1.inOut',
+    });
+});
+//Scroll from hero to intro section
+
 // Project section
 gsap.set('.js-up', { y: -100, opacity: 0 });
 gsap.to('.js-up', {

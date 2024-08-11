@@ -107,6 +107,18 @@ h1 {
 .top-burger-menu {
     background: transparent;
 }
+    .fixed-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    .scroll-section {
+        margin-top: 100vh; /* La hauteur de la première section */
+        z-index: 20;
+        position: relative;
+    }
 @media screen and (min-height: 500px) and (min-width: 640px) {
     .fixed-section {
         position: fixed;
