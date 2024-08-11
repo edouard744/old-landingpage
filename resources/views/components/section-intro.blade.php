@@ -1,4 +1,4 @@
-<section class="js-intro-box relative -mb-5 -mt-14 rounded-3xl border-2 border-[#E1E7EE] bg-[#FEFEFE] px-2 shadow-xl">
+<section class="js-intro-box relative -mb-10 -mt-14 rounded-[3rem] border-2 border-[#E1E7EE] bg-[#FEFEFE] px-2 shadow-xl">
     <div class="md:mx-auto md:max-w-5xl">
         <div id="intro-header" class="js-intro-trigger mb-9 pt-24">
             <h2
@@ -7,7 +7,7 @@
                 Comment puis-je vous
                 <span class="text-blue-600">aider ?</span>
             </h2>
-            <p class="js-intro-down mx-auto max-w-md text-center font-semibold">
+            <p class="js-intro-down mx-auto max-w-md mb-20 text-center font-semibold">
                 Texte remplissage... Être présent sur internet est plus important que jamais.Adipisicing enim eiusmod
                 esse.
             </p>

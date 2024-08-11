@@ -12,21 +12,29 @@
             </div>
         </div>
         <div class="mb-20 flex flex-col items-center justify-center gap-6 lg:flex-row">
-            <a
-                class="js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
-                target="_blank"
-                href="https://pression-pro.be/"
+            <div
+                class="project-box js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
             >
+             <a
+                    class="project-link peer absolute left-0 top-0 z-20 h-full w-full"
+                    target="_blank"
+                    tabindex="0"
+                    href="https://pression-pro.be/"
+                >
+                    <span class="sr-only">Lien vers le site du projet Pression pro</span>
+                </a>
                 <img
-                    class="z-20 h-full max-h-80 w-full rounded-lg object-cover"
+                    class="z-20 h-full max-h-80 w-full rounded-lg object-cover focus:w-screen"
                     src="{{ asset('storage/pression-pro.jpg') }}"
                     alt="projet1"
                 />
+                <!--todo regarder si la transition est bonne-->
+
                 <div
-                    class="transition-02 absolute bottom-20 flex flex-col items-end justify-end gap-4 text-white opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-focus:bottom-0 group-focus:opacity-100"
+                    class="transition-02 project-description-box absolute -bottom-20 flex flex-col items-end justify-end gap-4 text-white opacity-0 group-hover:bottom-0 group-hover:opacity-100 peer-focus:bottom-0 peer-focus:opacity-100"
                 >
                     <div
-                        class="linear-gradient hidden h-full w-full items-start gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex"
+                        class="linear-gradient project-description hidden h-full w-full items-start gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex"
                     >
                         <span class="max-w-sm hyphens-auto text-justify text-xl font-medium">
                             PressionPro: Création d'un site pour un indépendant en nettoyage haute pression
@@ -54,22 +62,30 @@
                         </div>
                     </div>
                 </div>
-            </a>
-            <a
-                class="js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
-                target="_blank"
-                href="https://pression-pro.be/"
+            </div>
+           <div
+                class="project-box js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
             >
+             <a
+                    class="project-link peer absolute left-0 top-0 z-20 h-full w-full"
+                    target="_blank"
+                    tabindex="0"
+                    href="https://pression-pro.be/"
+                >
+                    <span class="sr-only">Lien vers le site du projet Pression pro</span>
+                </a>
                 <img
-                    class="z-20 h-full max-h-80 w-full rounded-lg object-cover"
+                    class="z-20 h-full max-h-80 w-full rounded-lg object-cover focus:w-screen"
                     src="{{ asset('storage/pression-pro.jpg') }}"
                     alt="projet1"
                 />
+                <!--todo regarder si la transition est bonne-->
+
                 <div
-                    class="transition-02 absolute bottom-20 flex flex-col items-end justify-end gap-4 text-white opacity-0 group-hover:bottom-0 group-hover:opacity-100"
+                    class="transition-02 project-description-box absolute -bottom-20 flex flex-col items-end justify-end gap-4 text-white opacity-0 group-hover:bottom-0 group-hover:opacity-100 peer-focus:bottom-0 peer-focus:opacity-100"
                 >
                     <div
-                        class="linear-gradient hidden h-full w-full items-start gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex"
+                        class="linear-gradient project-description hidden h-full w-full items-start gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex"
                     >
                         <span class="max-w-sm hyphens-auto text-justify text-xl font-medium">
                             PressionPro: Création d'un site pour un indépendant en nettoyage haute pression
@@ -97,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-            </a>
+            </div> 
         </div>
     </div>
 </section>

@@ -28,8 +28,7 @@
         <div class="js-footer-left mb-10 flex flex-col justify-center gap-6 md:justify-start">
             <span class="js-footer-left text-xl font-bold">Informations</span>
             <a href="mailto:contact@willems-edouard.be" class="js-footer-left hover:underline focus:underline">
-                Mail : contact
-                @willems-edouard.be
+                Mail : contact@willems-edouard.be
             </a>
             <a href="tel:+32498043730" class="js-footer-left hover:underline focus:underline">Tel : 04 98 04 37 30</a>
         </div>

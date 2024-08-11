@@ -342,7 +342,7 @@ h1 {
     background-image: linear-gradient(-135deg, transparent var(--fill), #fff var(--fill));
     background-size: 100% 33.33%;
 
-    transition: 0.4s ease-in-out 0.4s;
+    transition: 0.3s ease-in-out 0.2s;
     transition-property: --fill, all;
 }
 
@@ -358,6 +358,17 @@ h1 {
 
 .linear-gradient {
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7) 60%);
+}
+.project-link:focus ~ .project-description-box .project-description {
+    opacity: 1;
+    bottom: 0;
+}
+.project-link:focus ~ .project-description-box > .project-description,
+.project-link:hover ~ .project-description-box > .project-description {
+    display: flex;
+}
+.project-box .project-link:over ~ .project-description-box {
+    width: 1px;
 }
 .slide:hover,
 .slide:focus-visible {
