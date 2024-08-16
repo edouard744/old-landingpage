@@ -6,6 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Crypt;
 use Symfony\Component\HttpFoundation\Response;
 
 class LocaleMiddleware
@@ -19,10 +20,10 @@ class LocaleMiddleware
     {
         if ($request->segment(1) && $request->segment(2)) {
             $locale = $request->segment(1);
-            Cookie::queue('lang', $locale, 60 * 24 * 365); // 1 an
+            Cookie::queue('lang', Crypt::encrypt($locale, false), 60 * 24 * 365); // 1 an
         } elseif ($request->cookie('lang')) {
             // Déchiffrer et définir la langue
-            $locale = Cookie::get('lang');
+            $locale = Crypt::decrypt(Cookie::get('lang'), false);
         } else {
             $locale = config('app.fallback_locale');
         }
@@ -31,8 +32,7 @@ class LocaleMiddleware
             App::setLocale($locale);
         } else {
             // Si la langue n'est pas valide, on peut rediriger vers la langue par défaut
-            Cookie::queue('lang', config('app.fallback_locale'), 60 * 24 * 365); // 1 an
-            dd($locale);
+            Cookie::queue('lang', Crypt::encrypt(config('app.fallback_locale'), false), 60 * 24 * 365); // 1 an
 
             return redirect(config('app.fallback_locale').'/'.$request->path());
         }
