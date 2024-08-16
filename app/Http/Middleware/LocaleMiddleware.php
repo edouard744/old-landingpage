@@ -27,14 +27,15 @@ class LocaleMiddleware
         } else {
             $locale = config('app.fallback_locale');
         }
+        if (config('app.available_locales')) {
+            if (in_array($locale, config('app.available_locales'))) {
+                App::setLocale($locale);
+            } else {
+                // Si la langue n'est pas valide, on peut rediriger vers la langue par défaut
+                Cookie::queue('lang', Crypt::encrypt(config('app.fallback_locale'), false), 60 * 24 * 365); // 1 an
 
-        if (in_array($locale, config('app.available_locales'))) {
-            App::setLocale($locale);
-        } else {
-            // Si la langue n'est pas valide, on peut rediriger vers la langue par défaut
-            Cookie::queue('lang', Crypt::encrypt(config('app.fallback_locale'), false), 60 * 24 * 365); // 1 an
-
-            return redirect(config('app.fallback_locale').'/'.$request->path());
+                return redirect(config('app.fallback_locale').'/'.$request->path());
+            }
         }
 
         return $next($request);
