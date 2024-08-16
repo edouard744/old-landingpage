@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-Cc0X8GKy.css",
+    "file": "assets/app-C0fo4Mu-.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -10,10 +10,6 @@
     "src": "resources/js/app.js",
     "isEntry": true
   },
-  "storage/app/public/background-contact.png": {
-    "file": "assets/background-contact-DaaV7f_5.png",
-    "src": "storage/app/public/background-contact.png"
-  },
   "storage/app/public/background-desktop.png": {
     "file": "assets/background-desktop-D7Q-Ru_t.png",
     "src": "storage/app/public/background-desktop.png"
@@ -21,6 +17,10 @@
   "storage/app/public/background-mobile.png": {
     "file": "assets/background-mobile-B-cHiffp.png",
     "src": "storage/app/public/background-mobile.png"
+  },
+  "storage/app/public/background-secondary.png": {
+    "file": "assets/background-secondary-DaaV7f_5.png",
+    "src": "storage/app/public/background-secondary.png"
   },
   "storage/app/public/fonts/Poppins-Bold.ttf": {
     "file": "assets/Poppins-Bold-qTAUjFF7.ttf",

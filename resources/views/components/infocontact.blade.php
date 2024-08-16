@@ -1,5 +1,5 @@
 <div {{ $attributes->merge(['class' => '']) }}>
-    <span class="js-contact-up mb-4 block text-3xl font-semibold">Contactez moi</span>
+    <span class="js-contact-up mb-4 block text-3xl font-semibold">{{ __('message.contact.info.title') }}</span>
     <div class="js-contact-up flex flex-col gap-8 border-b-2 pb-4">
         <div class="js-contact-down flex gap-1">
             <svg class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0">
@@ -8,10 +8,9 @@
                 />
             </svg>
             <div class="flex flex-col">
-                <span class="text-xl font-semibold">Email</span>
+                <span class="text-xl font-semibold">{{ __('message.contact.info.email') }}</span>
                 <a href="mailto:contact@willems-edouard.be" class="font-medium hover:underline focus:underline">
-                    contact
-                    @willems-edouard.be
+                    {{ __('message.contact.info.email_value') }}
                 </a>
             </div>
         </div>
@@ -28,13 +27,15 @@
                 />
             </svg>
             <div class="flex flex-col">
-                <span class="text-xl font-semibold">Téléphone</span>
-                <a href="tel:+32498043730" class="font-medium hover:underline focus:underline">+32 498 043 730</a>
+                <span class="text-xl font-semibold">{{ __('message.contact.info.phone') }}</span>
+                <a href="tel:+32498043730" class="font-medium hover:underline focus:underline">
+                    {{ __('message.contact.info.phone_value') }}
+                </a>
             </div>
         </div>
     </div>
     <div class="flex flex-col gap-4 pb-4">
-        <span class="js-contact-right text-xl font-semibold">Réseaux</span>
+        <span class="js-contact-right text-xl font-semibold">{{ __('message.contact.info.network') }}</span>
         <div class="flex">
             <div class="js-contact-right flex basis-16">
                 <a target="_blank" href="#" class="social-icon">

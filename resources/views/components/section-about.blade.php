@@ -1,9 +1,9 @@
-<section class="overflow-y-hidden bg-grey-800 px-9 py-32 text-white lg:grid lg:grid-cols-2 xl:gap-x-10">
-    <div class="mx-auto text-center sm:text-left mb-10 w-max md:mb-0 lg:mx-0 lg:flex lg:flex-col lg:justify-end">
-        <h2 class="js-about-left js-about-box mb-4 font-bold">À propos de moi</h2>
-        <span class="text-scale js-about-up block font-bold">Salut !</span>
-        <span class="text-scale js-about-up block font-bold max-w-[80vw]">
-            Je suis
+<section class="overflow-y-hidden bg-grey-800 px-9 py-40 text-white lg:grid lg:grid-cols-2 xl:gap-x-10">
+    <div class="mx-auto mb-10 w-max text-center sm:text-left md:mb-0 lg:mx-0 lg:flex lg:flex-col lg:justify-end">
+        <h2 class="js-about-left js-about-box mb-4 font-bold">{{ __('message.about.title') }}</h2>
+        <span class="text-scale js-about-up block font-bold">{{ __('message.about.hi') }}</span>
+        <span class="text-scale js-about-up block max-w-[80vw] font-bold">
+            {{ __('message.about.iam') }}
             <em class="background-name relative z-10 inline-block not-italic">Edouard</em>
         </span>
     </div>
@@ -17,8 +17,7 @@
     />
     <div class="block max-w-xl sm:mx-auto md:mt-10 lg:mx-0">
         <p class="js-about-down mb-6 hyphens-auto text-lg">
-            J’ai 22 ans et je suis un passionné de développement web dans la région de liège qui viens fraichement de
-            terminer son bachelier.
+            {{ __('message.about.subtitle') }}
         </p>
         <div>
             <div class="flex w-full gap-4">
@@ -50,8 +49,7 @@
                 </div>
 
                 <p class="js-about-right mb-6 hyphens-auto">
-                    Je me lance dans l’aventure du développement web en solo avec l’envie d’apprendre de nouvelles
-                    choses, de démontrer mes compétences.
+                    {{ __('message.about.textone') }}
                 </p>
             </div>
             <div class="flex w-full gap-4">
@@ -87,8 +85,7 @@
                 </div>
 
                 <p class="js-about-right hyphens-auto">
-                    Mon objectif est d’apporter une valeur ajoutée concrète tout en grandissant professionnellement à
-                    chaque nouvelle expérience et surtout, de contribuer à la réussite de projets inspirants.
+                    {{ __('message.about.texttwo') }}
                 </p>
             </div>
         </div>

@@ -1,39 +1,62 @@
 <?php
 
-use App\Http\Controllers\Mailcontroller;
+use App\Http\Controllers\MailController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+$locale = App::currentLocale();
 
-Route::get('/projects', function () {
-    return view('projects');
-});
-//Route home
-// redirect / to /home
-Route::get('/', function () {
-    return redirect('/home');
-});
+// Redirige la route racine vers la langue par défaut
 Route::get('/home', function () {
-    return view('home');
-});
-// Route contact
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::post('contact', [Mailcontroller::class, 'store']);
+    $locale = App::currentLocale();
 
-Route::get('/projects/easyink', function () {
-    return view('easyink');
+    return redirect()->route('home', $locale);
 });
-Route::get('/projects/dreamreal', function () {
-    return view('dreamreal');
+Route::get('/', function () {
+    $locale = App::currentLocale();
+
+    return redirect()->route('home', $locale);
 });
+Route::get('/projects', function () {
+    $locale = App::currentLocale();
+
+    return redirect()->route('projects', $locale);
+});
+Route::get('/contact', function () {
+    $locale = App::currentLocale();
+
+    return redirect()->route('contact', $locale);
+});
+
+Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], function () {
+    Route::get('/home', function ($locale) {
+        if (in_array($locale, config('app.available_locales'))) {
+            App::setLocale($locale);
+        }
+
+        return view('home');
+    })->name('home');
+
+    Route::get('/projects', function ($locale) {
+        if (in_array($locale, config('app.available_locales'))) {
+            App::setLocale($locale);
+        }
+
+        return view('projects');
+    })->name('projects');
+
+    Route::get('/contact', function ($locale) {
+        if (in_array($locale, config('app.available_locales'))) {
+            App::setLocale($locale);
+        }
+
+        return view('contact');
+    })->name('contact');
+
+    Route::get('/privacy-policy', function () {
+        return view('privacy-policy');
+    })->name('privacy-policy');
+});
+Route::post('/{locale}/contact', [MailController::class, 'store']);
+
+

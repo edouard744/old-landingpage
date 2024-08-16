@@ -2,7 +2,7 @@
 <html lang="fr">
     <x-head
         description="Willems Edouard, jeune développeur web belge fraîchement diplômé."
-        title="Willems Edouard"
+        title="Création Site Web Liège | Willems Edouard"
     />
     <x-body>
         <x-main-nav />

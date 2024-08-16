@@ -1,15 +1,16 @@
-<section class="js-intro-box relative -mb-10 -mt-14 rounded-[3rem] border-2 border-[#E1E7EE] bg-[#FEFEFE] px-2 shadow-xl">
+<section
+    class="js-intro-box relative -mb-10 -mt-14 rounded-[3rem] border-2 border-[#E1E7EE] bg-[#FEFEFE] px-2 shadow-xl"
+>
     <div class="md:mx-auto md:max-w-5xl">
         <div id="intro-header" class="js-intro-trigger mb-9 pt-24">
             <h2
                 class="js-intro-down text-scale-sm mx-auto mb-7 max-w-sm text-center font-bold text-blue-900 sm:max-w-xl"
             >
-                Comment puis-je vous
-                <span class="text-blue-600">aider ?</span>
+                {{ __('message.intro.title') }}
+                <span class="text-blue-600">{{ __('message.intro.title_last') }}</span>
             </h2>
-            <p class="js-intro-down mx-auto max-w-md mb-20 text-center font-semibold">
-                Texte remplissage... Être présent sur internet est plus important que jamais.Adipisicing enim eiusmod
-                esse.
+            <p class="js-intro-down mx-auto mb-20 max-w-2xl text-center font-semibold">
+                {{ __('message.intro.subtitle') }}
             </p>
         </div>
         <div class="relative grid-cols-2 gap-20 lg:mb-40 lg:grid">
@@ -18,34 +19,38 @@
             />
             <div class="js-group-down mb-20 flex flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
                 <x-create-svg class="js-service-down" />
-                <span class="js-service-down text-3xl font-semibold text-blue-900">Création</span>
+                <span class="js-service-down text-3xl font-semibold text-blue-900">
+                    {{ __('message.intro.creation.title') }}
+                </span>
                 <p class="js-service-down max-w-md text-xl font-medium">
-                    Je conçois et développe votre site web de A à Z. Vous partagez votre vision, et je m’occupe du
-                    reste.
+                    {{ __('message.intro.creation.text') }}
                 </p>
             </div>
             <div class="js-group-down mb-20 flex flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
                 <x-cleaning-svg class="js-service-down" />
-                <span class="js-service-down text-3xl font-semibold text-blue-900">Remise à neuf</span>
+                <span class="js-service-down text-3xl font-semibold text-blue-900">
+                    {{ __('message.intro.cleaning.title') }}
+                </span>
                 <p class="js-service-down max-w-md text-xl font-medium">
-                    Je modernise et entretiens votre site existant, en le mettant à jour avec les dernières tendances et
-                    technologies.
+                    {{ __('message.intro.cleaning.text') }}
                 </p>
             </div>
             <div class="js-group-up mb-20 flex flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
                 <x-learning-svg class="js-service-up" />
-                <span class="js-service-up text-3xl font-semibold text-blue-900">Prise en main</span>
+                <span class="js-service-up text-3xl font-semibold text-blue-900">
+                    {{ __('message.intro.maintenance.title') }}
+                </span>
                 <p class="js-service-up max-w-md text-xl font-medium">
-                    Je vous forme pour utiliser votre site en toute autonomie, que ce soit pour gérer le contenu ou
-                    optimiser ses fonctionnalités.
+                    {{ __('message.intro.maintenance.text') }}
                 </p>
             </div>
             <div class="js-group-up mb-20 flex flex-col items-center gap-5 text-center lg:mb-0 lg:justify-center">
                 <x-communicate-svg class="js-service-up" />
-                <span class="js-service-up text-3xl font-semibold text-blue-900">Communication</span>
+                <span class="js-service-up text-3xl font-semibold text-blue-900">
+                    {{ __('message.intro.communication.title') }}
+                </span>
                 <p class="js-service-up max-w-md text-xl font-medium">
-                    Je vous accompagne pour créer et optimiser vos réseaux sociaux et autre outils de communication,
-                    afin d’améliorer votre visibilité en ligne.
+                    {{ __('message.intro.communication.text') }}
                 </p>
             </div>
         </div>

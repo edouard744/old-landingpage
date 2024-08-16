@@ -4,7 +4,7 @@
 
     <x-body>
         <x-main-nav />
-        <section class="bg-contact min-h-screen">
+        <section class="bg-secondary min-h-screen">
             <div class="relative mx-auto w-full max-w-7xl py-20">
                 <h1 class="mb-10 text-center font-bold text-blue-900">Mes projets</h1>
                 <div class="mx-2 mb-20 flex justify-center">

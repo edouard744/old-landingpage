@@ -6,16 +6,15 @@
     />
     <x-body>
         <x-main-nav />
-        <section class="bg-contact relative flex min-h-screen py-20">
+        <section class="bg-secondary relative flex min-h-screen py-20">
             <div class="mx-auto flex w-full max-w-7xl flex-col items-center justify-center">
                 <div class="flex flex-col gap-4 text-center">
                     <h1 class="text-scale js-contact-up font-bold text-blue-900">
-                        Parlez moi de
-                        <span class="block text-blue-500">votre projet !</span>
+                        {{ __('message.contact.title') }}
+                        <span class="block text-blue-500">{{ __('message.contact.titlelast') }}</span>
                     </h1>
                     <p class="js-contact-up max-w-2xl text-xl font-medium text-blue-700">
-                        Vous pouvez m'expliquer votre demande via ce formulaire ou en me contactant via mes coordonnées
-                        si dessous.
+                        {{ __('message.contact.textone') }}
                     </p>
                 </div>
                 <div

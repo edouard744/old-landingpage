@@ -102,7 +102,7 @@
                 <div class="blob-btn group flex justify-center gap-4 font-medium">
                     <button
                         type="submit"
-                        class="blob-btn-color blob peer relative left-5 text-xl focus:left-0 focus:underline group-hover:left-0 group-hover:underline"
+                        class="blob-btn-color blob peer relative left-5 text-xl z-20 focus:left-0 focus:underline group-hover:left-0 group-hover:underline"
                     >
                         Envoyer
                     </button>

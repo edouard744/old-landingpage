@@ -5,19 +5,17 @@
         <h1
             class="js-hero-up mx-auto mb-5 max-w-sm text-4xl font-bold text-blue-900 sm:max-w-[510px] md:max-w-2xl md:px-6 md:text-5xl lg:max-w-3xl lg:px-0 lg:text-6xl"
         >
-            Transformer votre vision en réalité
-            <span class="block sm:inline">digitale</span>
+            {{ __('message.hero.title') }}
         </h1>
-        <p class="js-hero-up mb-7 max-w-4xl text-lg font-medium text-blue-600 md:max-w-full md:text-2xl lg:text-3xl">
-            La conception de votre site
-            <span class="block sm:inline">web sur mesure</span>
+        <p class="js-hero-up mb-7 max-w-4xl text-lg font-medium text-blue-600 md:max-w-full md:text-xl lg:text-2xl">
+            {{ __('message.hero.subtitle') }}
         </p>
         <div class="js-hero-down">
             <a
                 href="/contact"
-                class="curtain-animation mx-auto block w-max rounded-full bg-blue-600 px-5 py-4 text-white delay-100 duration-100 hover:scale-105 hover:border-2 hover:border-blue-600  hover:font-bold hover:text-blue-600 focus:scale-105 focus-visible:border-2 focus-visible:border-blue-600 focus-visible:font-bold focus:text-blue-600"
+                class="curtain-animation mx-auto block w-max rounded-full border-2 border-blue-600 bg-blue-600 px-5 py-4 text-white delay-100 duration-100 hover:scale-105 hover:font-bold hover:text-blue-600 focus:scale-105 focus:text-blue-600 focus-visible:font-bold"
             >
-                Discutons de votre projet !
+                {{ __('buttons.contact') }}
             </a>
         </div>
         <x-code-svg

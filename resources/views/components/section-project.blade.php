@@ -15,7 +15,59 @@
             <div
                 class="project-box js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
             >
-             <a
+                <a
+                    class="project-link peer absolute left-0 top-0 z-20 h-full w-full"
+                    target="_blank"
+                    tabindex="0"
+                    href="https://pression-pro.be/"
+                >
+                    <span class="sr-only">Lien vers le site du projet Pression pro</span>
+                </a>
+
+                <img
+                    class="z-20 h-full max-h-80 w-full rounded-lg object-cover focus:w-screen"
+                    src="{{ asset('storage/pression-pro.jpg') }}"
+                    alt="projet1"
+                />
+                <!--todo regarder si la transition est bonne-->
+
+                <div
+                    class="transition-02 project-description-box absolute -bottom-20 flex flex-col items-end justify-end gap-4 text-white opacity-0 group-hover:bottom-0 group-hover:opacity-100 peer-focus:bottom-0 peer-focus:opacity-100"
+                >
+                    <div
+                        class="linear-gradient project-description hidden h-full w-full items-start gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex"
+                    >
+                        <span class="max-w-sm hyphens-auto text-justify text-xl font-medium">
+                            PressionPro: Création d'un site pour un indépendant en nettoyage haute pression
+                        </span>
+                        <div class="white rounded-full bg-grey-50 p-1">
+                            <svg
+                                class="h-10 w-10 fill-grey-800"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 -12 100 125"
+                                xml:space="preserve"
+                            >
+                                <g>
+                                    <path
+                                        d="M83.3,79.7c0,2-1.6,3.6-3.6,3.6H20.3c-2,0-3.6-1.6-3.6-3.6V20.3c0-2,1.6-3.6,3.6-3.6h23.4V9.5H20.3   c-6,0-10.8,4.8-10.8,10.8v59.4c0,6,4.8,10.8,10.8,10.8h59.4c6,0,10.8-4.8,10.8-10.8V56.3h-7.2V79.7z"
+                                    />
+                                    <polygon
+                                        points="56.3,9.5 56.3,16.7 78.2,16.7 49.9,45 55,50.1 83.3,21.8 83.3,43.7 90.5,43.7 90.5,9.5  "
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="project-box js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
+            >
+                <a
                     class="project-link peer absolute left-0 top-0 z-20 h-full w-full"
                     target="_blank"
                     tabindex="0"
@@ -63,57 +115,6 @@
                     </div>
                 </div>
             </div>
-           <div
-                class="project-box js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
-            >
-             <a
-                    class="project-link peer absolute left-0 top-0 z-20 h-full w-full"
-                    target="_blank"
-                    tabindex="0"
-                    href="https://pression-pro.be/"
-                >
-                    <span class="sr-only">Lien vers le site du projet Pression pro</span>
-                </a>
-                <img
-                    class="z-20 h-full max-h-80 w-full rounded-lg object-cover focus:w-screen"
-                    src="{{ asset('storage/pression-pro.jpg') }}"
-                    alt="projet1"
-                />
-                <!--todo regarder si la transition est bonne-->
-
-                <div
-                    class="transition-02 project-description-box absolute -bottom-20 flex flex-col items-end justify-end gap-4 text-white opacity-0 group-hover:bottom-0 group-hover:opacity-100 peer-focus:bottom-0 peer-focus:opacity-100"
-                >
-                    <div
-                        class="linear-gradient project-description hidden h-full w-full items-start gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex"
-                    >
-                        <span class="max-w-sm hyphens-auto text-justify text-xl font-medium">
-                            PressionPro: Création d'un site pour un indépendant en nettoyage haute pression
-                        </span>
-                        <div class="white rounded-full bg-grey-50 p-1">
-                            <svg
-                                class="h-10 w-10 fill-grey-800"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 -12 100 125"
-                                xml:space="preserve"
-                            >
-                                <g>
-                                    <path
-                                        d="M83.3,79.7c0,2-1.6,3.6-3.6,3.6H20.3c-2,0-3.6-1.6-3.6-3.6V20.3c0-2,1.6-3.6,3.6-3.6h23.4V9.5H20.3   c-6,0-10.8,4.8-10.8,10.8v59.4c0,6,4.8,10.8,10.8,10.8h59.4c6,0,10.8-4.8,10.8-10.8V56.3h-7.2V79.7z"
-                                    />
-                                    <polygon
-                                        points="56.3,9.5 56.3,16.7 78.2,16.7 49.9,45 55,50.1 83.3,21.8 83.3,43.7 90.5,43.7 90.5,9.5  "
-                                    />
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div> 
         </div>
     </div>
 </section>
