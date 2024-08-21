@@ -1,20 +1,20 @@
 @php
-    $currentUrl = Request::url();
+    $currentUrl = explode('/', Request::url());
+
     $locale = App::currentLocale();
-    $cook = Request::cookie('lang');
 @endphp
 
-<nav class="sm:border-grey-400 relative z-20 h-full w-full min-w-max bg-white sm:border-b-2">
-    <div class="nav-container relative' mx-4 flex items-center justify-between sm:max-w-3xl md:mx-auto">
+<nav class="md:border-grey-400 relative z-20 h-full w-full min-w-max bg-white md:border-b-2">
+    <div class="nav-container relative' mx-4 flex items-center justify-between md:mx-auto md:max-w-5xl">
         <input class="checkbox absolute right-5 top-0 z-40 h-16 w-10 cursor-pointer opacity-0" type="checkbox" />
-        <div class="top-burger-menu sm:block">
+        <div class="top-burger-menu md:block">
             <div class="hamburger-lines absolute right-5 top-5 z-[31] flex h-5 w-8 flex-col justify-between">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </div>
             <div
-                class="logo absolute left-4 top-4 z-20 ml-5 w-max text-xl text-blue-600 sm:top-0 sm:p-6 md:relative md:left-0"
+                class="logo absolute left-4 top-6 z-20 ml-5 w-max text-xl text-blue-600 md:relative md:left-0 md:top-0 md:p-6"
             >
                 <div class="relative flex justify-center gap-2">
                     <a class="absolute left-0 top-0 h-full w-full" href="/{{ $locale }}/home">
@@ -54,36 +54,92 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    <span class="hidden text-lg font-semibold text-blue-500 sm:inline">Willems Edouard</span>
+                    <span class="hidden text-lg font-semibold text-blue-500 lg:inline">Willems Edouard</span>
                 </div>
             </div>
         </div>
+
         <ul
-            class="menu-items absolute left-0 top-0 z-20 flex h-screen w-full flex-col items-center justify-center gap-16 bg-blue-800 pt-28 text-center text-2xl sm:relative sm:h-max sm:flex-row sm:justify-end sm:bg-transparent sm:py-6 sm:text-lg sm:text-blue-600"
+            class="menu-items absolute left-0 top-0 z-20 flex h-screen w-full flex-col items-center justify-center gap-16 bg-blue-800 pt-28 text-center text-2xl md:relative md:h-max md:flex-row md:justify-center md:bg-transparent md:py-6 md:text-lg md:text-blue-600 xl:justify-end"
         >
             <li class="list-none">
                 <a
                     href="/{{ $locale }}/home"
-                    class="{{ str_contains($currentUrl, '/home') ? ' sm:text-blue-600 text-white underline sm:no-underline font-semibold' : 'font-medium sm:text-grey-800 text-white ' }} block duration-200 hover:scale-105 hover:underline focus:scale-105 focus:underline sm:hover:text-blue-600 sm:focus:text-blue-600"
+                    class="{{ in_array('home', $currentUrl) ? ' md:text-blue-600 text-white underline md:no-underline font-semibold' : 'font-medium md:text-grey-800 text-white ' }} block duration-200 hover:scale-105 hover:underline focus:scale-105 focus:underline md:hover:text-blue-600 md:focus:text-blue-600"
                 >
                     {{ __('buttons.navigation.home') }}
                 </a>
             </li>
             <li class="list-none">
                 <a
-                    href="/{{ $locale }}/projects"
-                    class="{{ str_contains($currentUrl, '/projects') ? ' sm:text-blue-600 text-white underline sm:no-underline font-semibold' : 'font-medium sm:text-grey-800 text-white ' }} block duration-200 hover:scale-105 hover:underline focus:scale-105 focus:underline sm:hover:text-blue-600 sm:focus:text-blue-600"
+                    href="/{{ $locale }}/services"
+                    class="{{ in_array('services', $currentUrl) ? ' md:text-blue-600 text-white underline md:no-underline font-semibold' : 'font-medium md:text-grey-800 text-white ' }} block duration-200 hover:scale-105 hover:underline focus:scale-105 focus:underline md:hover:text-blue-600 md:focus:text-blue-600"
                 >
-                    {{ __('buttons.navigation.projects') }}
+                    {{ __('buttons.navigation.services') }}
                 </a>
             </li>
             <li class="list-none">
                 <a
+                    href="/{{ $locale }}/projects"
+                    class="{{ in_array('projects', $currentUrl) ? ' md:text-blue-600 text-white underline md:no-underline font-semibold' : 'font-medium md:text-grey-800 text-white ' }} block duration-200 hover:scale-105 hover:underline focus:scale-105 focus:underline md:hover:text-blue-600 md:focus:text-blue-600"
+                >
+                    {{ __('buttons.navigation.projects') }}
+                </a>
+            </li>
+
+            <li class="list-none">
+                <a
                     href="/{{ $locale }}/contact"
-                    class="{{ str_contains($currentUrl, '/contact') ? ' sm:text-blue-600 text-white underline sm:no-underline font-semibold' : 'font-medium sm:text-grey-800 text-white ' }} block duration-200 hover:scale-105 hover:underline focus:scale-105 focus:underline sm:hover:text-blue-600 sm:focus:text-blue-600"
+                    class="{{ in_array('contact', $currentUrl) ? ' md:text-blue-600 text-white underline md:no-underline font-semibold' : 'font-medium md:text-grey-800 text-white ' }} block duration-200 hover:scale-105 hover:underline focus:scale-105 focus:underline md:hover:text-blue-600 md:focus:text-blue-600"
                 >
                     {{ __('buttons.navigation.contact') }}
                 </a>
+            </li>
+            <li class="group relative flex flex-col">
+                <button
+                    class="peer relative flex h-max w-max flex-row items-center justify-center overflow-hidden rounded-lg items-center border border-gray-200 bg-white px-2 py-1 transition-all duration-200"
+                >
+                    @if ($locale == 'fr')
+                        <span>Fr</span>
+                    @elseif ($locale == 'en')
+                        <span>En</span>
+                    @else
+                        <span>Fr</span>
+                    @endif
+
+                    <svg
+                        class="rotate-90 transition-all group-focus-within:rotate-180 group-hover:rotate-180"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="m12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z"
+                        />
+                    </svg>
+                </button>
+                <div
+                    class="invisible absolute -mb-2 h-full min-h-5 w-max min-w-20 pt-14 group-focus-within:visible group-hover:visible peer-focus:visible"
+                >
+                    <div
+                        class="absolute -bottom-[7rem] right-3 flex h-max w-max flex-col gap-2 rounded-lg border border-zinc-200 bg-white p-2 shadow-lg"
+                    >
+                        <a
+                            href="/fr/{{ $currentUrl[4] }}"
+                            class="flex items-center justify-center rounded-lg p-2 hover:bg-zinc-100"
+                        >
+                            Français
+                        </a>
+                        <a
+                            href="/en/{{ $currentUrl[4] }}"
+                            class="flex items-center justify-center gap-2 rounded-lg p-2 hover:bg-zinc-100"
+                        >
+                            English
+                        </a>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>

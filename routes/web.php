@@ -7,16 +7,23 @@ use Illuminate\Support\Facades\Route;
 $locale = App::currentLocale();
 
 // Redirige la route racine vers la langue par défaut
-Route::get('/home', function () {
-    $locale = App::currentLocale();
 
-    return redirect()->route('home', $locale);
-});
 Route::get('/', function () {
     $locale = App::currentLocale();
 
     return redirect()->route('home', $locale);
 });
+Route::get('/home', function () {
+    $locale = App::currentLocale();
+
+    return redirect()->route('home', $locale);
+});
+Route::get('/services', function () {
+    $locale = App::currentLocale();
+
+    return redirect()->route('services', $locale);
+});
+
 Route::get('/projects', function () {
     $locale = App::currentLocale();
 
@@ -45,6 +52,14 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], f
         return view('projects');
     })->name('projects');
 
+    Route::get('/services', function ($locale) {
+        if (in_array($locale, config('app.available_locales'))) {
+            App::setLocale($locale);
+        }
+
+        return view('services');
+    })->name('services');
+
     Route::get('/contact', function ($locale) {
         if (in_array($locale, config('app.available_locales'))) {
             App::setLocale($locale);
@@ -58,5 +73,3 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], f
     })->name('privacy-policy');
 });
 Route::post('/{locale}/contact', [MailController::class, 'store']);
-
-
