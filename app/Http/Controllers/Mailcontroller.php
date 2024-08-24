@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\Contact;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
@@ -29,9 +30,10 @@ class Mailcontroller extends Controller
         ];
 
         $validator = Validator::make($request->all(), $ValidationRules);
-
         if ($validator->fails()) {
-            return redirect('/contact')->withErrors($validator)->withInput();
+            return redirect(App::getlocale().'/contact')
+                ->withErrors($validator)
+                ->withInput();
         }
 
         Mail::to('willems.edouard.pro@gmail.com')->send(new Contact($name, $email, $about, $tel, $message));

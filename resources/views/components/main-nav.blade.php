@@ -56,6 +56,9 @@
                     </svg>
                     <span class="hidden text-lg font-semibold text-blue-500 lg:inline">Willems Edouard</span>
                 </div>
+                <a href="#main" class="absolute -top-52 border-2 border-gray-100 bg-white p-2 focus:top-20">
+                    {{ __('buttons.navigation.skip') }}
+                </a>
             </div>
         </div>
 
@@ -97,7 +100,7 @@
             </li>
             <li class="group relative flex flex-col">
                 <button
-                    class="peer relative flex h-max w-max flex-row items-center justify-center overflow-hidden rounded-lg items-center border border-gray-200 bg-white px-2 py-1 transition-all duration-200"
+                    class="peer invisible relative flex h-max w-max flex-row items-center justify-center overflow-hidden rounded-lg border border-gray-200 bg-white px-2 py-1 transition-all duration-200 md:visible"
                 >
                     @if ($locale == 'fr')
                         <span>Fr</span>
@@ -121,20 +124,23 @@
                     </svg>
                 </button>
                 <div
-                    class="invisible absolute -mb-2 h-full min-h-5 w-max min-w-20 pt-14 group-focus-within:visible group-hover:visible peer-focus:visible"
+                    class="-mb-2 h-full min-h-5 w-max min-w-20 pt-14 group-focus-within:visible group-hover:visible peer-focus:visible md:invisible md:absolute"
                 >
                     <div
-                        class="absolute -bottom-[7rem] right-3 flex h-max w-max flex-col gap-2 rounded-lg border border-zinc-200 bg-white p-2 shadow-lg"
+                        class="-bottom-[7rem] right-3 flex h-max w-max flex-col gap-2 rounded-lg border-zinc-200 p-2 text-white md:absolute md:border md:bg-white md:text-blue-800 md:shadow-lg"
                     >
+                        <span class="mb-4 block text-2xl font-bold md:sr-only">
+                            {{ __('message.navigation.lang') }}
+                        </span>
                         <a
                             href="/fr/{{ $currentUrl[4] }}"
-                            class="flex items-center justify-center rounded-lg p-2 hover:bg-zinc-100"
+                            class="{{ $locale == 'fr' ? 'underline' : '' }} flex items-center justify-center rounded-lg p-2 md:hover:bg-zinc-100"
                         >
                             Français
                         </a>
                         <a
                             href="/en/{{ $currentUrl[4] }}"
-                            class="flex items-center justify-center gap-2 rounded-lg p-2 hover:bg-zinc-100"
+                            class="{{ $locale == 'en' ? 'underline' : '' }} flex items-center justify-center gap-2 rounded-lg p-2 md:hover:bg-zinc-100"
                         >
                             English
                         </a>

@@ -13,7 +13,7 @@
         </div>
         <div class="mb-20 flex flex-col items-center justify-center gap-6 lg:flex-row">
             <div
-                class="project-box js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
+                class="project-box js-project group relative w-full overflow-hidden max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
             >
                 <a
                     class="project-link peer absolute left-0 top-0 z-20 h-full w-full"
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div
-                class="project-box js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
+                class="project-box overflow-hidden js-project group relative w-full max-w-2xl rounded-lg border-2 border-grey-100 lg:w-1/2 lg:max-w-xl"
             >
                 <a
                     class="project-link peer absolute left-0 top-0 z-20 h-full w-full"

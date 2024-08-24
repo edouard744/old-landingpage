@@ -6,6 +6,7 @@
     />
     <x-body>
         <x-main-nav />
+            <main id="main" >
         <div class="fixed-section">
             <x-section-hero />
         </div>
@@ -17,5 +18,6 @@
             <x-section-contact />
             <x-footer />
         </div>
+        </main>
     </x-body>
 </html>

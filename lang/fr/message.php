@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'navigation' => [
+        'lang' => 'Langue',
+    ],
     'hero' => [
         'title' => 'transformer votre vision en réalité digital',
         'subtitle' => 'Je vous propose un service de création de site web sur mesure, rapide, efficace et optimisé à moindre coût.',
@@ -95,5 +98,47 @@ return [
         'title' => '404',
         'subtitle' => 'Page non trouvée, retournez à la',
         'subtitlelast' => 'page d\'accueil',
+    ],
+    'service' => [
+        'title' => 'Mes services',
+        'intro' => [
+            'title' => 'Création de site web de qualité, adapté pour vous',
+            'text' => 'Que vous soyez un indépendant, une ASBL, une PME ou que vous souhaitiez un site personnel, je vous accompagne durant chaque étape, sans stress. De l\'acquisition du nom de domaine à la création et au déploiement du site, je transforme vos besoins en une présence digitale qui vous ressemble.',
+        ],
+        'left' => [
+            'title' => 'Un service polyvalent pour un site qui vous conviens',
+            'text' => 'Que vous souhaitiez un <strong class="text-blue-700">site codé</strong>
+ sur mesure pour une personnalisation totale.',
+            'text2' => 'L\'intégration d\'un design et de fonctionnalités spécifiques dans un <strong class="text-blue-700">WordPress.</strong>',
+            'text3' => 'Ou encore l\'utilisation de <strong class="text-blue-700">thèmes préconçus</strong> pour une mise en place rapide et simple.',
+            'text4' => 'Je suis en mesure de vous proposer un large éventail de solution <strong class="text-blue-700">adaptées à vos besoins, votre budget et vos envies.</strong>',
+        ],
+        'right' => [
+            'title' => 'Focalisé sur l\'essentiel : rapidité, optimisation et accessibilité pour tous',
+            'subtitle1' => 'Accessibilité',
+            'text1' => 'Des site accessible à tous, quelles que soient leurs situations ou handicaps, pour une expérience en ligne inclusive',
+            'subtitle2' => 'Référencement',
+            'text2' => 'Des structure d’information optimales et un contenu bien rédigé pour assurer une excellente visibilité à votre site',
+            'subtitle3' => 'Optimisation',
+            'text3' => 'Un site visuellement agréable et utilisable sur n’importe quelle appareil',
+            'subtitle4' => 'Réactif à la taille',
+            'text4' => 'Un site visuellement agréable et utilisable sur n’importe quelle appareil',
+        ],
+        'bottom' => [
+            'title' => 'Services annexes',
+            'subtitle' => 'Je m\'occupe aussi de...',
+            'service1' => 'Maintenance',
+            'text1' => 'Je mets à jour vos sites, pour les rendre plus performants et optimisés.',
+            'service2' => 'Remise à neuf',
+            'text2' => 'Je modernise et entretiens votre site existant, en le mettant à jour avec les dernières te tendances et technologies.',
+            'service3' => 'Aide à la prise en main',
+            'text3' => 'Si vous souhaitez être autonome avec votre site, je peux vous former à son utilisation pour que vous gériez votre contenu vous-même.',
+            'service4' => 'Référencement locale',
+            'text4' => 'Être visible localement est crucial pour votre entreprise. Pour ce faire, je vous aide à configurer votre profil Google My Business.',
+            'service5' => 'Création d’article de blog',
+            'text5' => 'Si vous en avez besoin, je pourrai vous aider lors de la création de vos articles de blog afin d’avoir un contenu adapté pour un référencement optimale',
+            'service6' => 'Réseaux sociaux pro',
+            'text6' => 'Avoir des réseaux sociaux professionnels est un atout. Si vous n’en avez pas encore, je peux vous aider à les créer pour renforcer votre présence en ligne.',
+        ],
     ],
 ];

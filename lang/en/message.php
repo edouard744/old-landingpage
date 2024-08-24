@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'navigation' => [
+        'lang' => 'Language',
+    ],
     'hero' => [
         'title' => 'transforme your vision in real digital',
         'subtitle' => 'I offer you a service of web site creation on a measure basis, quick, efficient and optimized at the lowest cost.',
@@ -95,5 +98,46 @@ return [
         'title' => '404',
         'subtitle' => 'Page not found, return to the',
         'subtitlelast' => 'home page',
+    ],
+    'service' => [
+        'title' => 'My services',
+        'intro' => [
+            'title' => 'Creation of web site of quality, adapted for you',
+            'text' => 'Whether you are an independent, an ASBL, a PME or if you want a personal site, I will help you during each step, without stress. From acquiring the domain name to the creation and deployment of the site, I transform your needs into a digital presence that you resemble.',
+        ],
+        'left' => [
+            'title' => 'A service polyvalent for a site that suits you',
+            'text' => 'Whether you want a <strong class="text-blue-700">coded site</strong> on a measure for a total personalization.',
+            'text2' => 'The integration of a design and functional features in a <strong class="text-blue-700">WordPress.</strong>',
+            'text3' => 'Or even the use of <strong class="text-blue-700">pre-designed themes</strong> for a quick and simple setup.',
+            'text4' => 'I am able to offer you a wide variety of solutions <strong class="text-blue-700">adapted to your needs, your budget and your desires.</strong>',
+        ],
+        'right' => [
+            'title' => 'Focused on the essential: speed, optimization and accessibility for all',
+            'subtitle1' => 'Accessibility',
+            'text1' => 'A site accessible to all, regardless of their situations or disabilities, for an inclusive online experience',
+            'subtitle2' => 'Ranking',
+            'text2' => 'An optimal information structure and well-written content to ensure a good visibility to your site',
+            'subtitle3' => 'Optimization',
+            'text3' => 'A visually appealing and usable on any device',
+            'subtitle4' => 'Responsive to size',
+            'text4' => 'A visually appealing and usable on any device',
+        ],
+        'bottom' => [
+            'title' => 'Additional services',
+            'subtitle' => 'I also do...',
+            'service1' => 'Maintenance',
+            'text1' => 'I update your sites to make them faster and more optimized.',
+            'service2' => 'Cleaning',
+            'text2' => 'I modernize and interview your existing site, updating it with the latest trends and technologies.',
+            'service3' => 'Help to get started',
+            'text3' => 'If you want to be autonomous with your site, I can help you to use it to manage your content yourself.',
+            'service4' => 'Local search engine',
+            'text4' => 'Being visible locally is crucial for your company. To do this, I help you to configure your Google My Business profile.',
+            'service5' => 'Creation of blog article',
+            'text5' => 'If you need it, I can help you with the creation of your blog articles to have an appropriate content for a good ranking',
+            'service6' => 'Professional social networks',
+            'text6' => 'Having professional social networks is a luxury. If you don\'t have one yet, I can help you to create them to enhance your online presence.',
+        ],
     ],
 ];

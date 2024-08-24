@@ -1,11 +1,11 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CrgC1Y2O.css",
+    "file": "assets/app-DaNAnTOM.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-Do79HZ6s.js",
+    "file": "assets/app-BXEjq0K3.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
@@ -25,6 +25,10 @@
   "storage/app/public/bg-image.jpg": {
     "file": "assets/bg-image-C0tgTRgJ.jpg",
     "src": "storage/app/public/bg-image.jpg"
+  },
+  "storage/app/public/bg-test.png": {
+    "file": "assets/bg-test-13457Kt1.png",
+    "src": "storage/app/public/bg-test.png"
   },
   "storage/app/public/fonts/Poppins-Bold.ttf": {
     "file": "assets/Poppins-Bold-qTAUjFF7.ttf",

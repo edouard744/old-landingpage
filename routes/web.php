@@ -72,4 +72,4 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], f
         return view('privacy-policy');
     })->name('privacy-policy');
 });
-Route::post('/{locale}/contact', [MailController::class, 'store']);
+Route::post('/mail', [MailController::class, 'store']);

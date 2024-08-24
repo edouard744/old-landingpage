@@ -67,8 +67,8 @@ gsap.to('.js-second-arrow', {
     },
 });
 document.querySelectorAll('.js-group-up').forEach(group => {
-    gsap.set(group.querySelectorAll('.js-service-up'), { y: '100px', opacity: 0 });
-    gsap.to(group.querySelectorAll('.js-service-up'), {
+    gsap.set(group.querySelectorAll('.js-service-section-up'), { y: '100px', opacity: 0 });
+    gsap.to(group.querySelectorAll('.js-service-section-up'), {
         y: 0,
         opacity: 1,
         duration: 0.65,
@@ -81,8 +81,8 @@ document.querySelectorAll('.js-group-up').forEach(group => {
     });
 });
 document.querySelectorAll('.js-group-down').forEach(group => {
-    gsap.set(group.querySelectorAll('.js-service-down'), { y: '-100px', opacity: 0 });
-    gsap.to(group.querySelectorAll('.js-service-down'), {
+    gsap.set(group.querySelectorAll('.js-service-section-down'), { y: '-100px', opacity: 0 });
+    gsap.to(group.querySelectorAll('.js-service-section-down'), {
         y: 0,
         opacity: 1,
         duration: 0.65,
@@ -109,63 +109,56 @@ gsap.to('.js-intro-down', {
         start: 'bottom center',
     },
 });
+gsap.set('.js-intro-up', { y: 100, opacity: 0 });
+gsap.to('.js-intro-up', {
+    y: 0,
+    opacity: 1,
+    duration: 0.65,
+    stagger: 0.1,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+        trigger: '.js-intro-trigger',
+        start: 'bottom center',
+    },
+});
 
 let mm = gsap.matchMedia();
 
-mm.add('(min-width: 1024px)', () => {
-    gsap.to(window, {
-        immediateRender: false,
-        scrollTrigger: {
-            trigger: '.js-intro-box',
-            start: 'top 97%',
-            end: 'bottom 100%',
-            toggleActions: 'play complete none none',
-        },
-        duration: 0.65,
-        scrollTo: { y: '#intro-header' },
-        ease: 'power1.inOut',
+if (document.querySelector('.js-intro-box')) {
+    mm.add('(min-width: 1024px)', () => {
+        gsap.to(window, {
+            immediateRender: false,
+            scrollTrigger: {
+                trigger: '.js-intro-box',
+                start: 'top 97%',
+                end: 'bottom 100%',
+                toggleActions: 'play complete none none',
+            },
+            duration: 0.65,
+            scrollTo: { y: '#intro-header' },
+            ease: 'power1.inOut',
+        });
     });
-});
-mm.add('(max-width: 1023px)', () => {
-    gsap.to(window, {
-        immediateRender: false,
-        scrollTrigger: {
-            trigger: '.js-intro-box',
-            start: 'top 85%',
-            end: 'bottom 100%',
-            toggleActions: 'play complete none none',
-        },
-        duration: 0.65,
-        scrollTo: { y: '#intro-header' },
-        ease: 'power1.inOut',
+
+    mm.add('(max-width: 1023px)', () => {
+        gsap.to(window, {
+            immediateRender: false,
+            scrollTrigger: {
+                trigger: '.js-intro-box',
+                start: 'top 85%',
+                end: 'bottom 100%',
+                toggleActions: 'play complete none none',
+            },
+            duration: 0.65,
+            scrollTo: { y: '#intro-header' },
+            ease: 'power1.inOut',
+        });
     });
-});
+}
 //Scroll from hero to intro section
 
 // Project section
-gsap.set('.js-up', { y: -100, opacity: 0 });
-gsap.to('.js-up', {
-    y: 0,
-    opacity: 1,
-    duration: 0.65,
-    delay: 0.3,
-    ease: 'power1.inOut',
-    scrollTrigger: {
-        trigger: '.js-box',
-        start: 'top 75%',
-    },
-});
-gsap.set('.js-down', { y: 100, opacity: 0 });
-gsap.to('.js-down', {
-    y: 0,
-    opacity: 1,
-    duration: 0.65,
-    ease: 'power1.inOut',
-    scrollTrigger: {
-        trigger: '.js-box',
-        start: 'top 75%',
-    },
-});
+
 gsap.set('.js-project', { x: '-20vw', opacity: 0 });
 gsap.to('.js-project', {
     x: 0,
@@ -439,4 +432,73 @@ gsap.to('.js-contact-right', {
         trigger: '.js-contact-box',
         start: 'top 70%',
     },
+});
+
+document.querySelectorAll('.js-wrapper').forEach((wrapper, index) => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: wrapper, // Chaque wrapper a son propre ScrollTrigger
+            start: 'top 98%-100px',
+        },
+    });
+
+    tl.fromTo(
+        wrapper.querySelectorAll('.js-down'),
+        { y: '-100px', opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, ease: 'power1.inOut', delay: Math.min(0.2 * index, 0.5), stagger: 0.2 },
+    );
+});
+document.querySelectorAll('.js-wrapper').forEach((wrapper, index) => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: wrapper, // Chaque wrapper a son propre ScrollTrigger
+            start: 'top 98%-100px',
+        },
+    });
+    tl.fromTo(
+        wrapper.querySelectorAll('.js-up'),
+        { y: '100px', opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, ease: 'power1.inOut', delay: Math.min(0.2 * index, 0.5), stagger: 0.2 },
+    );
+});
+
+document.querySelectorAll('.js-wrapper').forEach((wrapper, index) => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: wrapper, // Chaque wrapper a son propre ScrollTrigger
+            start: 'top 98%-100px',
+        },
+    });
+    tl.fromTo(
+        wrapper.querySelectorAll('.js-left'),
+        { x: '-100px', opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.5, ease: 'power1.inOut', delay: Math.min(0.2 * index, 0.5), stagger: 0.2 },
+    );
+});
+document.querySelectorAll('.js-wrapper').forEach((wrapper, index) => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: wrapper, // Chaque wrapper a son propre ScrollTrigger
+            start: 'top 98%-100px',
+        },
+    });
+    tl.fromTo(
+        wrapper.querySelectorAll('.js-right'),
+        { x: '100px', opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.5, ease: 'power1.inOut', delay: Math.min(0.2 * index, 0.5), stagger: 0.2 },
+    );
+});
+
+document.querySelectorAll('.js-wrapper').forEach((wrapper, index) => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: wrapper, // Chaque wrapper a son propre ScrollTrigger
+            start: 'top 98%-100px',
+        },
+    });
+    tl.fromTo(
+        wrapper.querySelectorAll('.js-reveal'),
+        { opacity: 0 },
+        { opacity: 1, duration: 0.5, ease: 'power1.inOut', delay: Math.min(0.2 * index, 0.5), stagger: 0.2 },
+    );
 });
