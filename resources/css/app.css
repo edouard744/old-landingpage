@@ -540,3 +540,28 @@ h1 {
         top 0.3s,
         opacity 0.3s;
 }
+
+.scrollToTopBtn {
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+}
+@media (min-width: 1500px) {
+    .showBtn {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

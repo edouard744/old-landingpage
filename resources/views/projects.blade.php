@@ -6,8 +6,8 @@
         <x-main-nav />
         <main id="main">
             <section class="bg-secondary min-h-screen">
-                <div class="relative mx-auto w-full max-w-7xl py-20">
-                    <h1 class="mb-10 text-center font-bold text-blue-900">Mes projets</h1>
+                <div class="relative js-wrapper mx-auto w-full max-w-7xl py-20">
+                    <h1 class="js-down mb-10 text-center font-bold text-blue-900">{{ __('message.project.title') }}</h1>
                     <div class="mx-2 mb-20 flex justify-center overflow-hidden">
                         <a
                             class="js-project group relative mx-8 w-full max-w-2xl rounded-lg lg:max-w-5xl"
@@ -26,8 +26,9 @@
                                     class="linear-gradient hidden h-full w-full items-start justify-center gap-8 rounded-lg px-4 pb-8 pt-32 group-hover:flex group-focus:flex"
                                 >
                                     <span class="max-w-2xl font-medium md:text-xl xl:text-2xl">
-                                        PressionPro : Création d'un site pour un indépendant en nettoyage haute pression
+                                        {{ __('message.project.pressionpro') }}
                                     </span>
+
                                     <div class="white rounded-full bg-grey-50 p-1">
                                         <svg
                                             class="h-10 w-10 fill-grey-800"

@@ -110,7 +110,7 @@
                     </div>
                 </aside>
             </section>
-            <section class="mb-20 bg-gradient-to-b from-white to-[#ECF3FF] px-4 pt-20 md:px-8">
+            <section class="bg-gradient-to-b from-white to-[#ECF3FF] px-4 pt-20 md:px-8">
                 <div class="js-wrapper">
                     <h2
                         class="js-left mx-auto mb-10 w-max rounded-lg bg-blue-700 px-4 py-2 text-lg font-medium text-white"
@@ -127,7 +127,7 @@
                     <div
                         class="js-down flex max-w-md flex-col gap-2 rounded-2xl bg-white p-8 shadow-2xl md:justify-self-end"
                     >
-                        <div class="mb-2 flex gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
+                        <div class="mb-2 flex items-center gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
                             <svg
                                 class="h-10 w-10"
                                 fill="none"
@@ -164,7 +164,7 @@
                         </p>
                     </div>
                     <div class="js-up flex max-w-md flex-col gap-2 rounded-2xl bg-blue-800 p-8 text-white shadow-2xl">
-                        <div class="mb-2 flex gap-2">
+                        <div class="mb-2 flex items-center gap-2">
                             <svg
                                 class="h-10 w-10"
                                 fill="none"
@@ -187,7 +187,7 @@
                     <div
                         class="js-down flex max-w-md flex-col gap-2 rounded-2xl bg-white p-8 shadow-2xl md:justify-self-end"
                     >
-                        <div class="mb-2 flex gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
+                        <div class="mb-2 flex items-center gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
                             <x-learning-svg class="h-10 w-10" />
                             <span class="text-xl font-semibold">{{ __('message.service.bottom.service3') }}</span>
                         </div>
@@ -196,7 +196,7 @@
                         </p>
                     </div>
                     <div class="js-up flex max-w-md flex-col gap-2 rounded-2xl bg-blue-800 p-8 text-white shadow-2xl">
-                        <div class="mb-2 flex gap-2">
+                        <div class="mb-2 flex items-center gap-2">
                             <svg
                                 class="h-10 w-10"
                                 fill="none"
@@ -221,7 +221,7 @@
                     <div
                         class="js-down flex max-w-md flex-col gap-2 rounded-2xl bg-white p-8 shadow-2xl md:justify-self-end"
                     >
-                        <div class="mb-2 flex gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
+                        <div class="mb-2 flex items-center gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
                             <svg
                                 class="h-10 w-10"
                                 fill="none"
@@ -254,7 +254,7 @@
                         </p>
                     </div>
                     <div class="js-up flex max-w-md flex-col gap-2 rounded-2xl bg-blue-800 p-8 text-white shadow-2xl">
-                        <div class="mb-2 flex gap-2">
+                        <div class="mb-2 flex items-center gap-2">
                             <svg
                                 class="h-10 w-10"
                                 fill="none"

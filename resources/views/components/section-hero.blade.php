@@ -27,16 +27,16 @@
             </a>
         </div>
         <x-code-svg
-            class="js-floating js-hero-up invisible absolute right-5 top-60 sm:visible sm:right-10 sm:top-60 sm:h-12 sm:w-12 md:right-20 lg:right-44 lg:top-64"
+            class="js-floating js-hero-up invisible absolute right-5 top-60 sm:visible sm:right-10 sm:top-60 sm:h-12 sm:w-12 md:right-16 lg:right-48 lg:top-64"
         />
         <x-web-svg
-            class="js-floating js-hero-up invisible absolute right-5 top-36 sm:visible sm:right-4 sm:top-28 sm:h-10 sm:w-10 md:right-12 md:top-32 lg:right-32"
+            class="js-floating js-hero-up invisible absolute right-5 top-36 sm:visible sm:right-4 sm:top-28 sm:h-10 sm:w-10 md:right-12 md:top-36 lg:right-32"
         />
         <x-mail-svg
             class="js-floating js-hero-up invisible absolute top-7 sm:visible sm:-left-4 sm:top-20 md:-left-2 md:top-20 lg:left-20"
         />
         <x-wordpress-svg
-            class="js-floating js-hero-down left invisible absolute left-5 sm:visible sm:top-64 md:top-56 lg:left-32 lg:top-64"
+            class="js-floating js-hero-down left invisible absolute left-5 sm:visible sm:top-64 md:top-56 lg:left-32 lg:top-[16.5rem]"
         />
     </div>
 </section>

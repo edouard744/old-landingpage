@@ -12,12 +12,14 @@
             <p class="js-intro-down mx-auto mb-10 max-w-2xl text-center font-semibold">
                 {{ __('message.intro.subtitle') }}
             </p>
-            <a
-                href="/services"
-                class="js-intro-up mx-auto mb-20 block w-max min-w-72 max-w-full rounded-full border-2 border-blue-600 bg-blue-600 px-5 py-4 text-center font-bold text-white transition-all hover:scale-105 hover:bg-blue-700 hover:underline focus:scale-105 focus:bg-blue-700 focus:underline"
-            >
-                {{ __('buttons.services2') }}
-            </a>
+            <div class="js-intro-up">
+                <a
+                    href="/services"
+                    class="mx-auto mb-20 block w-max min-w-72 max-w-full rounded-full border-2 border-blue-600 bg-blue-600 px-3 py-3 text-center text-xl font-bold text-white transition-all hover:scale-105 hover:bg-blue-700 hover:underline focus:scale-105 focus:bg-blue-700 focus:underline"
+                >
+                    {{ __('buttons.services2') }}
+                </a>
+            </div>
         </div>
         <div class="relative grid-cols-2 gap-20 lg:mb-40 lg:grid">
             <x-double-arrow-svg

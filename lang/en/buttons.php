@@ -13,4 +13,5 @@ return [
     'services' => 'My services',
     'services2' => 'See the services',
     'send' => 'Send',
+    'scrollToTop' => 'Scroll to top button',
 ];

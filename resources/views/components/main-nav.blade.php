@@ -4,7 +4,7 @@
     $locale = App::currentLocale();
 @endphp
 
-<nav class="md:border-grey-400 relative z-20 h-full w-full min-w-max bg-white md:border-b-2">
+<nav class="md:border-grey-400 relative z-50 h-full w-full min-w-max bg-white md:border-b-2">
     <div class="nav-container relative' mx-4 flex items-center justify-between md:mx-auto md:max-w-5xl">
         <input class="checkbox absolute right-5 top-0 z-40 h-16 w-10 cursor-pointer opacity-0" type="checkbox" />
         <div class="top-burger-menu md:block">

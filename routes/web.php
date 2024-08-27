@@ -23,6 +23,11 @@ Route::get('/services', function () {
 
     return redirect()->route('services', $locale);
 });
+Route::get('privacy-policy', function () {
+    $locale = App::currentLocale();
+
+    return redirect()->route('privacy-policy', $locale);
+});
 
 Route::get('/projects', function () {
     $locale = App::currentLocale();
@@ -69,7 +74,7 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], f
     })->name('contact');
 
     Route::get('/privacy-policy', function () {
-        return view('privacy-policy');
+        return view('confidentiality');
     })->name('privacy-policy');
 });
 Route::post('/mail', [MailController::class, 'store']);

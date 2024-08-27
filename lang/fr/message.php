@@ -55,7 +55,7 @@ return [
     'contact' => [
         'section' => [
             'title' => 'Discutons ensemble de votre projet !',
-            'subtitle' => 'Si vous avez une question Cillum id ullamco in sunt laborum voluptate duis eiusmod irure ad.',
+            'subtitle' => 'Si vous avez une question ou une proposition, n\'hésitez pas à me contacter.',
         ],
         'title' => 'Parlez moi de',
         'titlelast' => 'votre projet !',
@@ -80,6 +80,8 @@ return [
             'about_value' => 'Quel est votre sujet ?',
             'message' => 'Message',
             'message_value' => 'Votre message',
+            'success' => 'Merci pour votre message',
+            'success_value' => 'Je vous contacterai au plus vite.',
         ],
     ],
     'footer' => [
@@ -92,7 +94,7 @@ return [
             'phone' => 'Tel : 04 98 04 37 30',
         ],
         'network' => 'Réseaux',
-        'conditions' => 'Condition générale',
+        'conditions' => 'Politique de confidentialité',
     ],
     '404' => [
         'title' => '404',
@@ -140,5 +142,9 @@ return [
             'service6' => 'Réseaux sociaux pro',
             'text6' => 'Avoir des réseaux sociaux professionnels est un atout. Si vous n’en avez pas encore, je peux vous aider à les créer pour renforcer votre présence en ligne.',
         ],
+    ],
+    'project' => [
+        'title' => 'Mes projets',
+        'pressionpro' => 'PressionPro : Création d\'un site pour un indépendant en nettoyage haute pression',
     ],
 ];

@@ -9,6 +9,11 @@
         type="text/javascript"
         src="https://cdn-cookieyes.com/client_data/c44cbab59e2503950bda73f6/script.js"
     ></script>
+    <script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="c68edca9-e410-4549-98a5-e9a720dba8e8"
+    ></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ $description }}" />

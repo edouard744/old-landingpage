@@ -14,4 +14,5 @@ return [
     'services' => 'Mes services',
     'services2' => 'Voir les services',
     'send' => 'Envoyer',
+    'scrollToTop' => 'Bouton de retour vers le haut de la page',
 ];

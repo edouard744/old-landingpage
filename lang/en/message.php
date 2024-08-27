@@ -55,7 +55,7 @@ return [
     'contact' => [
         'section' => [
             'title' => 'Let\'s talk about your project!',
-            'subtitle' => 'If you have a question Cillum id ullamco in sunt laborum voluptate duis eiusmod irure ad.',
+            'subtitle' => 'If you have a question or a proposal, don\'t hesitate to contact me.',
         ],
         'title' => 'Talk to me about',
         'titlelast' => 'your project!',
@@ -80,6 +80,8 @@ return [
             'about_value' => 'What is your subject?',
             'message' => 'Message',
             'message_value' => 'Your message',
+            'success' => 'Thank you for your message',
+            'success_value' => 'I will contact you as soon as possible.',
         ],
     ],
     'footer' => [
@@ -92,7 +94,7 @@ return [
             'phone' => 'Tel : 04 98 04 37 30',
         ],
         'network' => 'Networks',
-        'conditions' => 'General conditions',
+        'conditions' => 'Privacy policy',
     ],
     '404' => [
         'title' => '404',
@@ -139,5 +141,9 @@ return [
             'service6' => 'Professional social networks',
             'text6' => 'Having professional social networks is a luxury. If you don\'t have one yet, I can help you to create them to enhance your online presence.',
         ],
+    ],
+    'project' => [
+        'title' => 'My projects',
+        'pressionpro' => 'PressionPro: Creation of a site for an independent in high-pressure cleaning',
     ],
 ];
