@@ -33,19 +33,15 @@
                         {{ __('message.service.left.title') }}
                     </h2>
 
-                    <div class="flex flex-col gap-6 text-xl font-medium text-blue-900">
-                        <p class="js-up">{!! __('message.service.left.text') !!}</p>
-                        <p class="js-up">
-                            {!! __('message.service.left.text2') !!}
-                        </p>
-
-                        <p class="js-up">
-                            {!! __('message.service.left.text3') !!}
-                        </p>
-
-                        <p class="js-up">
+                    <div class="flex flex-col gap-6 font-medium text-blue-900">
+                        <p class="js-up text-xl">
                             {!! __('message.service.left.text4') !!}
                         </p>
+                        <ul class="js-up flex ml-4 text-lg  list-disc flex-col gap-4">
+                            <li>{!! __('message.service.left.text') !!}</li>
+                            <li>{!! __('message.service.left.text2') !!}</li>
+                            <li>{!! __('message.service.left.text3') !!}</li>
+                        </ul>
                     </div>
                 </div>
                 <aside class="js-wrapper rounded-3xl bg-blue-800 px-4 py-8 text-white shadow-xl md:p-8 lg:col-span-4">
@@ -129,7 +125,7 @@
                     >
                         <div class="mb-2 flex items-center gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
                             <svg
-                                class="h-10 w-10"
+                                class="h-12 w-12"
                                 fill="none"
                                 height="48"
                                 viewBox="0 0 48 48"
@@ -166,7 +162,7 @@
                     <div class="js-up flex max-w-md flex-col gap-2 rounded-2xl bg-blue-800 p-8 text-white shadow-2xl">
                         <div class="mb-2 flex items-center gap-2">
                             <svg
-                                class="h-10 w-10"
+                                class="h-12 w-12"
                                 fill="none"
                                 height="51"
                                 viewBox="0 0 42 51"
@@ -188,7 +184,7 @@
                         class="js-down flex max-w-md flex-col gap-2 rounded-2xl bg-white p-8 shadow-2xl md:justify-self-end"
                     >
                         <div class="mb-2 flex items-center gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
-                            <x-learning-svg class="h-10 w-10" />
+                            <x-learning-svg class="h-12 w-12" />
                             <span class="text-xl font-semibold">{{ __('message.service.bottom.service3') }}</span>
                         </div>
                         <p class="text-xl font-medium">
@@ -198,7 +194,7 @@
                     <div class="js-up flex max-w-md flex-col gap-2 rounded-2xl bg-blue-800 p-8 text-white shadow-2xl">
                         <div class="mb-2 flex items-center gap-2">
                             <svg
-                                class="h-10 w-10"
+                                class="h-12 w-12"
                                 fill="none"
                                 height="42"
                                 viewBox="0 0 39 42"
@@ -222,30 +218,20 @@
                         class="js-down flex max-w-md flex-col gap-2 rounded-2xl bg-white p-8 shadow-2xl md:justify-self-end"
                     >
                         <div class="mb-2 flex items-center gap-2 fill-blue-700 stroke-blue-700 text-blue-700">
-                            <svg
-                                class="h-10 w-10"
-                                fill="none"
-                                height="42"
-                                viewBox="0 0 41 42"
-                                width="41"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <g fill="#242bcc">
-                                    <path
-                                        d="m5.46658.150879h24.98272c-.0479.044415-.094.090541-.1401.136667l-2.5967 2.596664h-22.24583c-1.51016 0-2.73334 1.22318-2.73334 2.73334v4.78355h17.46277l-2.7334 2.7333h-14.72937v22.5498c0 1.5102 1.22318 2.7333 2.73334 2.7333h30.06663c1.5102 0 2.7334-1.2231 2.7334-2.7333v-22.2458l2.5966-2.5967c.0462-.0461.0923-.0922.1367-.1401v24.9827c0 3.0186-2.4481 5.4667-5.4667 5.4667h-30.06663c-3.01861 0-5.46667-2.4481-5.46667-5.4667v-30.06667c0-3.01861 2.44798-5.466751 5.46658-5.466751z"
-                                    />
-                                    <path
-                                        d="m8.19985 19.9678h7.72335l-.1863 1.6724c-.0392.3588-.0222.7158.0479 1.0609h-7.58513c-.7551 0-1.36666-.6116-1.36666-1.3667s.61174-1.3666 1.36684-1.3666z"
-                                    />
-                                    <path
-                                        d="m6.8335 29.5339c0-.7551.61156-1.3667 1.36666-1.3667h24.60004c.7551 0 1.3666.6116 1.3666 1.3667s-.6115 1.3667-1.3666 1.3667h-24.60004c-.7551 0-1.36666-.6116-1.36666-1.3667z"
-                                    />
-                                    <path
-                                        clip-rule="evenodd"
-                                        d="m39.4144 1.73626c-2.1149-2.113191-5.5418-2.113191-7.655 0l-12.8773 12.87724c-.2187.2187-.3571.5057-.3912.8149l-.7158 6.4389c-.0461.4117.0974.8234.3912 1.1172.2938.2939.7055.4374 1.1173.3912l6.4388-.7157c.3092-.0342.5962-.1726.8149-.3912l12.8773-12.87732c2.1132-2.1132 2.113-5.54027-.0002-7.65522zm-5.7229 1.93214c1.0472-1.04549 2.7436-1.04549 3.7908 0 1.0455 1.0472 1.0455 2.74357 0 3.79081l-12.5392 12.53749-4.2623.4732.4732-4.2623z"
-                                        fill-rule="evenodd"
-                                    />
-                                </g>
+                            <svg class="h-12 w-12" viewBox="8 8 84 86" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m78 20h-28c-1.65 0-3 1.35-3 3s1.35 3 3 3h28c1.65 0 3-1.35 3-3s-1.35-3-3-3z" />
+                                <path d="m50 38h-28c-1.65 0-3 1.35-3 3s1.35 3 3 3h28c1.65 0 3-1.35 3-3s-1.35-3-3-3z" />
+                                <path d="m50 74h-28c-1.65 0-3 1.35-3 3s1.35 3 3 3h28c1.65 0 3-1.35 3-3s-1.35-3-3-3z" />
+                                <path d="m78 56h-28c-1.65 0-3 1.35-3 3s1.35 3 3 3h28c1.65 0 3-1.35 3-3s-1.35-3-3-3z" />
+                                <path d="m78 74h-10c-1.65 0-3 1.35-3 3s1.35 3 3 3h10c1.65 0 3-1.35 3-3s-1.35-3-3-3z" />
+                                <path d="m32 56h-10c-1.65 0-3 1.35-3 3s1.35 3 3 3h10c1.65 0 3-1.35 3-3s-1.35-3-3-3z" />
+                                <path d="m32 20h-10c-1.65 0-3 1.35-3 3s1.35 3 3 3h10c1.65 0 3-1.35 3-3s-1.35-3-3-3z" />
+                                <path d="m78 38h-10c-1.65 0-3 1.35-3 3s1.35 3 3 3h10c1.65 0 3-1.35 3-3s-1.35-3-3-3z" />
+                                <g
+                                    font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+                                    font-size="5"
+                                    font-weight="bold"
+                                ></g>
                             </svg>
                             <span class="text-xl font-semibold">{{ __('message.service.bottom.service5') }}</span>
                         </div>
@@ -256,7 +242,7 @@
                     <div class="js-up flex max-w-md flex-col gap-2 rounded-2xl bg-blue-800 p-8 text-white shadow-2xl">
                         <div class="mb-2 flex items-center gap-2">
                             <svg
-                                class="h-10 w-10"
+                                class="h-12 w-12"
                                 fill="none"
                                 height="46"
                                 viewBox="0 0 57 46"

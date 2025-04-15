@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
     <x-head description="Willems Edouard, jeune développeur web belge fraîchement diplômé." title="Willems Edouard" />
     <x-body>
         <x-main-nav />
-        <main id="main">
+        <main id="main" class="font-notoserif">
             <section class="min-h-screen">
                 <div class="bg-image py-20">
                     <h1 class="mb-10 text-center font-bold text-white">Politique de confidentialité</h1>
                 </div>
                 <div class="mx-auto my-20 max-w-7xl rounded-xl border-2 border-grey-100 p-4">
-                    <p class="mb-4 text-lg text-blue-900">
+                    <p class="my-10 text-center text-lg text-blue-900">
                         <strong>Politique de confidentialité - Version 1.1 à jour au 1er octobre 2024</strong>
                     </p>
 
@@ -154,7 +154,7 @@
                         <tr>
                             <td class="border border-slate-600 p-2">
                                 Exécuter les contrats conclus entre vous et nous et vous fournir les informations et
-                                services demandés ;
+                                services demandés.
                             </td>
                             <td class="border border-slate-600 p-2">
                                 Ce traitement est nécessaire à l’exécution de nos obligations contractuelles
@@ -162,7 +162,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="border border-slate-600 p-2">Percevoir vos paiements ;</td>
+                            <td class="border border-slate-600 p-2">Percevoir vos paiements.</td>
                             <td class="border border-slate-600 p-2">
                                 Ce traitement est nécessaire à l’exécution de nos obligations contractuelles
                                 respectives.
@@ -170,7 +170,7 @@
                         </tr>
                         <tr>
                             <td class="border border-slate-600 p-2">
-                                Nous assurer du respect des diverses législations applicables ;
+                                Nous assurer du respect des diverses législations applicables.
                             </td>
                             <td class="border border-slate-600 p-2">
                                 Ce traitement est nécessaire à l’exécution de nos obligations légales
@@ -180,7 +180,7 @@
                             <td class="border border-slate-600 p-2">
                                 Gérer nos sites internet et effectuer des opérations techniques internes dans le cadre
                                 de résolution de problèmes, analyse de données, de tests, recherches, analyses, études
-                                et sondages ;
+                                et sondages.
                             </td>
                             <td class="border border-slate-600 p-2">
                                 Ce traitement est fondé sur notre intérêt légitime (assurer la sécurité de nos sites
@@ -190,7 +190,7 @@
                         <tr>
                             <td class="border border-slate-600 p-2">
                                 Améliorer et optimiser nos sites internet, notamment pour nous assurer de ce que
-                                l’affichage de nos contenus est adapté à votre appareil ;
+                                l’affichage de nos contenus est adapté à votre appareil.
                             </td>
                             <td class="border border-slate-600 p-2">
                                 Ce traitement est fondé sur notre intérêt légitime (vous fournir des contenus pertinents
@@ -199,7 +199,8 @@
                         </tr>
                         <tr>
                             <td class="border border-slate-600 p-2">
-                                Gérer notre comptabilité et assurer le respect de nos obligations comptables et fiscales
+                                Gérer notre comptabilité et assurer le respect de nos obligations comptables et
+                                fiscales.
                             </td>
                             <td class="border border-slate-600 p-2">
                                 Ce traitement est nécessaire à l’exécution de nos obligations légales.

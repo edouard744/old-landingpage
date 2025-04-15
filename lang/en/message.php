@@ -5,7 +5,7 @@ return [
         'lang' => 'Language',
     ],
     'hero' => [
-        'title' => 'transforme your vision in real digital',
+        'title' => 'Transforme your vision in real digital',
         'subtitle' => 'I offer you a service of web site creation on a measure basis, quick, efficient and optimized at the lowest cost.',
     ],
     'intro' => [
@@ -121,7 +121,7 @@ return [
             'subtitle2' => 'Ranking',
             'text2' => 'An optimal information structure and well-written content to ensure a good visibility to your site',
             'subtitle3' => 'Optimization',
-            'text3' => 'A visually appealing and usable on any device',
+            'text3' => ' The optimization of the size of your media and pages for a fast and responsive site',
             'subtitle4' => 'Responsive to size',
             'text4' => 'A visually appealing and usable on any device',
         ],

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<:q:q!DOCTYPE html>
 <html lang="fr">
     <x-head
         description="Willems Edouard, jeune développeur web belge fraîchement diplômé."
@@ -6,18 +6,18 @@
     />
     <x-body>
         <x-main-nav />
-            <main id="main" >
-        <div class="fixed-section">
-            <x-section-hero />
-        </div>
-        <div class="scroll-section">
-            <x-section-intro />
-            <x-section-workmethod />
-            <x-section-project />
-            <x-section-about />
-            <x-section-contact />
-            <x-footer />
-        </div>
+        <main id="main">
+            <div class="fixed-section">
+                <x-section-hero />
+            </div>
+            <div class="scroll-section">
+                <x-section-intro />
+                <x-section-workmethod />
+                <x-section-project />
+                <x-section-about />
+                <x-section-contact />
+                <x-footer />
+            </div>
         </main>
     </x-body>
 </html>
