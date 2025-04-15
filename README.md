@@ -16,14 +16,16 @@ This project was designed as a simple landing page to showcase my profile, servi
 
 ## 📸 Preview
 
-<p align="center">
-  <img src="./readme-image/home_hero.png" width="45%" style="vertical-align: top;" />
-  <img src="./readme-image/home_service.png" width="45%" style="vertical-align: top;" />
-</p>
-<p align="center">
-  <img src="./readme-image/contact.png" width="45%" style="vertical-align: top;" />
-  <img src="./readme-image/service_details.png" width="45%" style="vertical-align: top;" />
-</p>
+<table>
+  <tr>
+    <td align="center"><img src="./readme-image/home_hero.png"></td>
+    <td align="center"><img src="./readme-image/home_service.png"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./readme-image/contact.png"></td>
+    <td align="center"><img src="./readme-image/service_details.png"></td>
+  </tr>
+</table>
 
 ## 🗒️ Notes
 
